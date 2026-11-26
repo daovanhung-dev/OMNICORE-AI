@@ -1,0 +1,23 @@
+{
+  "version": "11.0",
+  "routing": "routing.json",
+  "resource_registry": "workflows/registry.json",
+  "context_map": "context-map.md",
+  "control": "core/agent-control.md",
+  "target": "target.md",
+  "profiles": "technology-profiles/INDEX.md",
+  "tools": {
+    "kit": "tools/validate-kit.py",
+    "architecture": "validators/validate_architecture.py",
+    "inventory": "codebase/inventory.py",
+    "generator": "tools/create-codebase.py",
+    "context": "workflows/tools/build-context.py",
+    "original_skills": "tools/import-original-skills.py",
+    "task_session": "tools/task.py",
+    "template_adapter": "engines/template_adapter.py"
+  },
+  "verified_generator": "fastapi-typescript",
+  "skill_context": "skills/CONTEXT.md",
+  "original_skills": "original-skills.json",
+  "execution_policies": "engines/policies.json"
+}

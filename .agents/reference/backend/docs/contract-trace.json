@@ -1,0 +1,29 @@
+{
+  "decision_source": "backend/docs/dd/API-001/02-overview.md",
+  "requirements": [
+    {
+      "id": "API-T01",
+      "expected": "Danh sách mặc định có hai mục",
+      "source": "backend/docs/dd/API-001/02-overview.md",
+      "tests": [
+        "tests.test_items::test_success"
+      ]
+    },
+    {
+      "id": "API-T02",
+      "expected": "Phân trang ổn định theo ID",
+      "source": "backend/docs/dd/API-001/03-request.md",
+      "tests": [
+        "tests.test_items::test_pagination"
+      ]
+    },
+    {
+      "id": "API-T08",
+      "expected": "Chế độ bảo vệ tùy cấu hình yêu cầu vai trò reader",
+      "source": "backend/docs/dd/API-001/06-errors.md",
+      "tests": [
+        "tests.test_foundation::test_protected"
+      ]
+    }
+  ]
+}

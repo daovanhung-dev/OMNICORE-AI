@@ -1,0 +1,502 @@
+{
+  "schemaVersion": "9.0.0",
+  "count": 124,
+  "files": [
+    {
+      "file": "CONTEXT.md",
+      "sha256": "04442e001ce70ac7f69793f8790a925dd1ac3eb52db2c1281a977efae3f6f0c2"
+    },
+    {
+      "file": "INDEX.md",
+      "sha256": "a32a61b03a2a49d889690c89e5a3f1be3d42e23c706b75f5a6db4fc2c35aa6e6"
+    },
+    {
+      "file": "README.md",
+      "sha256": "7847f2446dfff9b70d6fda35b8b302acac2e1c39c881b41a5966c03f1d07e58a"
+    },
+    {
+      "file": "code-review/README.md",
+      "sha256": "484e826de5891f10a102c120eb9b458f62b814458cf3ca6cdc32c49ab6157fe6"
+    },
+    {
+      "file": "code-review/SKILL.md",
+      "sha256": "6b887df0160d652401763a04ea9f4fbb2af4ea8fbcc48bc502f268a2e951061e"
+    },
+    {
+      "file": "code-review/checklists/quality-gates.md",
+      "sha256": "399341a13dd49d66aecd0eb041d5d2e5f36ec44c0afa5b90576f916f1b28a3c7"
+    },
+    {
+      "file": "code-review/examples/README.md",
+      "sha256": "173e9f4c79579c622d2df388be22f933b0248f25eb043d05557e80f9f2caf65b"
+    },
+    {
+      "file": "code-review/references/01-pham-vi-va-bang-chung.md",
+      "sha256": "4efc3bb1b4842bdde78a6242786882a342e5b8827aa52a22b3fa6cfa03d9cc65"
+    },
+    {
+      "file": "code-review/references/finding-gate.md",
+      "sha256": "04feedc677d1c7294cb8d69dc07ea9e1f29ecca45d6397fb215485ff8d7c5363"
+    },
+    {
+      "file": "code-review/references/procedure.md",
+      "sha256": "fba48379b0aadd6a6e6ded8535fd51817d62cee700abc4fd56af11a3b625433b"
+    },
+    {
+      "file": "code-review/references/report-format.md",
+      "sha256": "1b7c8349e3ca7a7116e22a96010db48dc23993c0a697c0d31783ef4b58dfe94d"
+    },
+    {
+      "file": "code-review/references/security-review.md",
+      "sha256": "584066e0d103f7f1b8bd6e3e090278490bb2173b385a4f3b8a01edcc30cabf6e"
+    },
+    {
+      "file": "create-codebase/SKILL.md",
+      "sha256": "756ece8c9ca5501d3b9238e72fe8273b73e8b5ba2bb1e11bb846d90b223b46d1"
+    },
+    {
+      "file": "create-codebase/references/01-dac-ta-va-khoi-tao.md",
+      "sha256": "d9f60fc04a8587b7c6243c65832292909eaa5ccf3defa964a94965dd9e290d9b"
+    },
+    {
+      "file": "create-dd-api/README.md",
+      "sha256": "bb3a5572d4552422bb74b96364ba2029352628aae2e88740c27d91659ac3fd68"
+    },
+    {
+      "file": "create-dd-api/SKILL.md",
+      "sha256": "8660903be2f259cc40ac7ae6f7f04f5e0990131e747ddb3ff87e645e055ed713"
+    },
+    {
+      "file": "create-dd-api/checklists/quality-gates.md",
+      "sha256": "9c85c5bd2f2bcae52bebda8820a63de1d7992ae3c33e28dc1114512bc5e86f4d"
+    },
+    {
+      "file": "create-dd-api/examples/README.md",
+      "sha256": "0f3f63edba4852b55bced2dee4716c98b431954f2af6ce98695adcd6eb9a11bd"
+    },
+    {
+      "file": "create-dd-api/examples/doi-chieu-api-doc.md",
+      "sha256": "7d5c93e963ee92b1b309f022d775a9598a073522f8363246edb81bc353345a7f"
+    },
+    {
+      "file": "create-dd-api/examples/mutation-pattern.md",
+      "sha256": "78f296534a8d7570e2acefdc9aee028f95d503e8a9145d46f636034ec107275b"
+    },
+    {
+      "file": "create-dd-api/examples/traceable-contract.md",
+      "sha256": "023be45dafe6cf078a4ea54cde1c2af806d875a5d89ce09113d3f6177a552c0a"
+    },
+    {
+      "file": "create-dd-api/references/01-tiep-nhan-va-phan-loai.md",
+      "sha256": "1070e74ac2ea24493f96e8d7e12538cab36b327fe342aaa52c74cbc146b91469"
+    },
+    {
+      "file": "create-dd-api/references/02-hop-dong-request-response.md",
+      "sha256": "81bb330e1318dd2985d04b02743462b8ca35d6259245f622e3e5d502c81f3e24"
+    },
+    {
+      "file": "create-dd-api/references/03-data-mapping-patterns.md",
+      "sha256": "3840dd36e8cacabbf57045a8ef2aa92976e25819395f32aec2d4a9ff7a9311de"
+    },
+    {
+      "file": "create-dd-api/references/04-bao-phu-va-ban-giao.md",
+      "sha256": "7e8bc73f18ca58e9cf11036b416c7255a31b374b6e720dbdd6774c552f2ee552"
+    },
+    {
+      "file": "create-dd-api/references/contract-reconciliation.md",
+      "sha256": "32c8c0b734de1c1e68a2ef3a54e5cc7d7297904f608c4f562fb93d9553d7b804"
+    },
+    {
+      "file": "create-dd-api/references/field-data-mapping.md",
+      "sha256": "5398e0299b17fa3239a095676cbfcf451cfda01704d08514e459bf1ed7fbf06f"
+    },
+    {
+      "file": "create-dd-api/references/ma-tran-chi-tiet.md",
+      "sha256": "408b5552f612f2bad7c7c8ed5214a8f24d75ae53ca2072b1e7f05326430c00c8"
+    },
+    {
+      "file": "create-dd-api/references/procedure.md",
+      "sha256": "9c4c420858b394195f4c01bc02bee6a61b1787aeb38736d1ee6783d79dd9efa6"
+    },
+    {
+      "file": "create-dd-api/references/review-gates.md",
+      "sha256": "e485864f51ea3f16bbce71552a5bf992853e55bd36da14a25b84d281e3262b47"
+    },
+    {
+      "file": "create-dd-api/scripts/README.md",
+      "sha256": "9944f14a651b72a964b534249208e5b2b36488fbd23b70ae2df2e8742edd3327"
+    },
+    {
+      "file": "create-dd-api/templates/00-cover.md",
+      "sha256": "2a91f02479c63c722cea6fabd1102c3d0300e8960097fd278218afc6e2b34c38"
+    },
+    {
+      "file": "create-dd-api/templates/01-history.md",
+      "sha256": "8eb185ab29176cb8773a17e8d81c487e72dad7f3181bd4c4629ae5a73e67ab46"
+    },
+    {
+      "file": "create-dd-api/templates/02-overview.md",
+      "sha256": "34c4555540c67ba42162936ca629d39170b00e995fda7c58b11122e6db67ef70"
+    },
+    {
+      "file": "create-dd-api/templates/03-request.md",
+      "sha256": "ac7583b4da00d38e095e4cc018775ea1e474d186e1b2a9eeb18f060aff1ff65f"
+    },
+    {
+      "file": "create-dd-api/templates/04-response.md",
+      "sha256": "d058a8ca6a954f47e6d6cc4d54266534b38075e064ffa8155aa4bb6b9dca090a"
+    },
+    {
+      "file": "create-dd-api/templates/05-data-mapping.md",
+      "sha256": "817a9b922069ec96c4aff55041db70d0d6c18e53d4f1d5ed7f85cd99413f0fa1"
+    },
+    {
+      "file": "create-dd-api/templates/06-errors.md",
+      "sha256": "9df4062a854761369efc26fae0003c3157e6ec4667e803ced624646188975ce2"
+    },
+    {
+      "file": "create-dd-api/templates/07-db-mapping.md",
+      "sha256": "1ef0f5a4309946cd2c7203bbd136d890dd49ec67f1233f2df894e60c77e2ed33"
+    },
+    {
+      "file": "create-dd-module/README.md",
+      "sha256": "c554e56b67e75f8b505f9abc4c3f4c6179aa2e99b8fdfbc4432a86dd7440ec46"
+    },
+    {
+      "file": "create-dd-module/SKILL.md",
+      "sha256": "a5d89a632b5ef0f0e3519e4338ca5e31c6fcd166cba5deb73126bf0324ab2941"
+    },
+    {
+      "file": "create-dd-module/checklists/quality-gates.md",
+      "sha256": "9c85c5bd2f2bcae52bebda8820a63de1d7992ae3c33e28dc1114512bc5e86f4d"
+    },
+    {
+      "file": "create-dd-module/examples/README.md",
+      "sha256": "cb6eb21e67aa5b96a78168554ad81ce65e90858bccc5b4f52396806fa0a7c4fa"
+    },
+    {
+      "file": "create-dd-module/examples/traceable-module.md",
+      "sha256": "a4a6950b1bae453460309f6ded571e19af8f53e99c2b805a51f94d6912a38595"
+    },
+    {
+      "file": "create-dd-module/references/01-phan-tich-nguon-va-trang-thai.md",
+      "sha256": "184a480e4d3c1e1544cd795c611a35995bbbef70dd7a827a7cfa225d9adf34c1"
+    },
+    {
+      "file": "create-dd-module/references/02-dac-ta-feature-function-view.md",
+      "sha256": "8a39ec082a25f982a562b110b17fb372dbb6ed18d23801f89e270d0782f30cdf"
+    },
+    {
+      "file": "create-dd-module/references/03-cong-nghiem-thu-module.md",
+      "sha256": "f3ee8276e7cd6ec94a4c2e136d41067abf65a7e1869365829fb182c5058e5587"
+    },
+    {
+      "file": "create-dd-module/references/diagrams-assets.md",
+      "sha256": "37baa3902e068990324b136137b0a9d018d03bea4283a81bd7e2ce0750378b68"
+    },
+    {
+      "file": "create-dd-module/references/procedure.md",
+      "sha256": "614a6930c99ccf339aab01477514ffb509936b52407552b400cbc4bc454163d7"
+    },
+    {
+      "file": "create-dd-module/references/scope-actors-states.md",
+      "sha256": "36cd3cab5a20ae1aba25b264a736eb0c57aec004d0a918678647d0dee4725049"
+    },
+    {
+      "file": "create-dd-module/references/traceability.md",
+      "sha256": "4e2e423953105bcbc27496ac281acb76b975e62a0f9f55944e5850fe98517cd3"
+    },
+    {
+      "file": "create-dd-module/scripts/README.md",
+      "sha256": "48ff6588781ab4fa2e8138eed0b71d78dcbddc767177294cddfb3216289e9263"
+    },
+    {
+      "file": "create-dd-module/templates/Function_List.md",
+      "sha256": "21414740c75a95547da41a8a62573f06562b5f9d83ec9e786a5b2965bfde0b98"
+    },
+    {
+      "file": "create-dd-module/templates/Import_File.md",
+      "sha256": "ceea921bf1b756a322af1e606024399fa80a90bf89cadc42c6632288d11db961"
+    },
+    {
+      "file": "create-dd-module/templates/List_Features.md",
+      "sha256": "ba249970d4b8b8107d6ca6254a423a675826195aca642f4ef93dd38a28cd385e"
+    },
+    {
+      "file": "create-dd-module/templates/Overall.md",
+      "sha256": "da104ef6dd1172ed1d6661d16a32016a1d2c0bf857e66dc6438c87c5952f951a"
+    },
+    {
+      "file": "create-dd-module/templates/README.md",
+      "sha256": "1c987e88f1b50f542fd67c4a74331d83dd97e34bdb33a3ec9a5d7fb598cf03a8"
+    },
+    {
+      "file": "create-dd-module/templates/Views.md",
+      "sha256": "c1e73f5fe9e6a009944535b74b4e2d9f2ac36d498cc63e9d1be824ba55f929bb"
+    },
+    {
+      "file": "create-dd-module/templates/assets/README.md",
+      "sha256": "347f936e713b59d926a55f0ba6c74ca550d853366fe253fb110a430574774314"
+    },
+    {
+      "file": "create-dd-module/templates/diagrams/README.md",
+      "sha256": "0a1e997804ae1614d6dc3184ef46c0cbe111f0fa2e4b31df81c40297e0f8c211"
+    },
+    {
+      "file": "create-dd-module/templates/history/CHANGELOG.md",
+      "sha256": "76546b0b36bc5df2c5cac9989dbb1e1031538724346bbb5334b54b6384476cb8"
+    },
+    {
+      "file": "create-dd-screen/README.md",
+      "sha256": "9f3864bcebc230dbe1248bb91325091fe27c90697224dff2b63d342f0f815cd2"
+    },
+    {
+      "file": "create-dd-screen/SKILL.md",
+      "sha256": "13b93164de5a78afd58062424bd4e9f814e86081fdb056d93a724a8257c3fc6c"
+    },
+    {
+      "file": "create-dd-screen/checklists/quality-gates.md",
+      "sha256": "9c85c5bd2f2bcae52bebda8820a63de1d7992ae3c33e28dc1114512bc5e86f4d"
+    },
+    {
+      "file": "create-dd-screen/examples/README.md",
+      "sha256": "ece703dafe5f757d4a337330d74c1c148ef29267c6f358e42ff1f73dd83bc634"
+    },
+    {
+      "file": "create-dd-screen/examples/trace-event-thuc-te.md",
+      "sha256": "844f894e836d16df00a4ce8793e40b2b1c0b8ed669d3c5ef8de6cb59b171ed27"
+    },
+    {
+      "file": "create-dd-screen/examples/traceable-screen.md",
+      "sha256": "d707434a98193ac1b8b6162691432c2476f17d6da4c99588532fd9f6f5ef98f8"
+    },
+    {
+      "file": "create-dd-screen/references/01-phan-tich-screen-package.md",
+      "sha256": "40cded22e8c08791fe2e6551b8ddcd5361cc37b001914647dc9ffeb9ad302c6d"
+    },
+    {
+      "file": "create-dd-screen/references/02-event-state-va-dieu-huong.md",
+      "sha256": "bbf68941bff3f947a57cce0d758a80153574710d570845b980d971f3e2d6fb49"
+    },
+    {
+      "file": "create-dd-screen/references/dd-review.md",
+      "sha256": "cfcaf6978ba2c5cb319f2186a264aa3d87573a06db8ef7be9312743b3194a133"
+    },
+    {
+      "file": "create-dd-screen/references/events-dataflow.md",
+      "sha256": "391eba917fec13f506687a9724cf0d4436f6d197bb8d5e3bdf72c920018cb8ea"
+    },
+    {
+      "file": "create-dd-screen/references/procedure.md",
+      "sha256": "cd29f5c9bafc26b1ffd3554fc4729d0ef8c3a6b294ec1316646aa8121adb2e02"
+    },
+    {
+      "file": "create-dd-screen/references/ui-states-and-markers.md",
+      "sha256": "a085e6ebff88c416594144fed4710da1b8c75394cf5dce23a661a4c29c949e78"
+    },
+    {
+      "file": "create-dd-screen/scripts/README.md",
+      "sha256": "3c8ddf04cba08ca487a7bfe594330ec171bc598d5d9193a8e85d031e9b69390f"
+    },
+    {
+      "file": "create-dd-screen/templates/00-overview.md",
+      "sha256": "7520e2f42ee6caa6c46485dac6b403167d9a4ee42b48ca38a306731fe344e048"
+    },
+    {
+      "file": "create-dd-screen/templates/01-ui-elements.md",
+      "sha256": "4ee7dfbdb5e0c691c3d4c37cd0a42238293052072cc712c5a48de06753e1c34e"
+    },
+    {
+      "file": "create-dd-screen/templates/02-events.md",
+      "sha256": "7f8946c194aec6522b637810a498af980b06e1303b35f45b7241a9b7fd031eb0"
+    },
+    {
+      "file": "create-dd-screen/templates/03-data-flow.md",
+      "sha256": "77116fad77a480d4b23cb03fc164de4d055024c604d2fad342ebe6146aada379"
+    },
+    {
+      "file": "create-dd-screen/templates/04-api-integration.md",
+      "sha256": "c54ca5952023cd9cf228b683057989c4ade2b4c23c85aa1e363d6129b2c37815"
+    },
+    {
+      "file": "create-dd-screen/templates/05-business-rules.md",
+      "sha256": "adcf82d95a830692661200e19325533388f8641b8b16b88b9ca2b4c889de2c6e"
+    },
+    {
+      "file": "create-dd-screen/templates/06-navigation.md",
+      "sha256": "26cf82381b09dab7c31524273cc38836c159e2489406f24074af21d25d16adc0"
+    },
+    {
+      "file": "create-dd-screen/templates/07-test-cases.md",
+      "sha256": "07a99fa04e97f2adeea9ec5edfd1ebcc158dd5b0efcb46468389b3526a3799f6"
+    },
+    {
+      "file": "create-dd-screen/templates/images/README.md",
+      "sha256": "118b518e842d127a4d2ea3579c9f1df395799db9e040be4ef38c17045cfa4122"
+    },
+    {
+      "file": "fix-bug/README.md",
+      "sha256": "1bd84549927f9da6cffecf6cf39f4636be3646071231a954527ce243bd499813"
+    },
+    {
+      "file": "fix-bug/SKILL.md",
+      "sha256": "70665554021bda0a2f91bdb68281842b37c9919f4619ad3a286c4ae20200acaf"
+    },
+    {
+      "file": "fix-bug/checklists/quality-gates.md",
+      "sha256": "dc2f61acd779cda384b054b9686b58826a9b59f6a2797ac2af45afe381fed64e"
+    },
+    {
+      "file": "fix-bug/examples/README.md",
+      "sha256": "3c7dd67d4691a65c6e9948508de7c160b7d7fc9c9acb6958a5a6ed9f1221fcda"
+    },
+    {
+      "file": "fix-bug/references/01-chan-doan-va-hoi-quy.md",
+      "sha256": "3817200c36f35b1427a9175617f200235be7b8c8f9fc3c0f38835aa6a5c45c5f"
+    },
+    {
+      "file": "fix-bug/references/incident-report.md",
+      "sha256": "e2e63f596c34302b6e480f6e3ff17664102caca41bc108d557be88e64d6d33cc"
+    },
+    {
+      "file": "fix-bug/references/procedure.md",
+      "sha256": "8089042c2d77b6db5a36b1f5409c5fc96e4d52c8bfc40007aa60de3d28acd7cb"
+    },
+    {
+      "file": "fix-bug/references/trace-and-regression.md",
+      "sha256": "56b4b70f090f2b1b922b30a38867bfcf88b132e6d3e4c6f1050ac19a30668398"
+    },
+    {
+      "file": "fix-bug/references/triage-hypotheses.md",
+      "sha256": "2a702f7d54614bbbae144e81edbed8e6b2e44c02c78295ddca9d05406ea03f72"
+    },
+    {
+      "file": "implement-feature/README.md",
+      "sha256": "76b0d6e0dec3734a66913326519b9b382a92a926a3c9cf6da34e704bbd167753"
+    },
+    {
+      "file": "implement-feature/SKILL.md",
+      "sha256": "a386445b5cefc71ae0d4b13d53f1b05c8ff65da0d0f7108a0986f472ab5d8f32"
+    },
+    {
+      "file": "implement-feature/checklists/quality-gates.md",
+      "sha256": "5808f4e442533f8aa09baa2cb3ec31309b107365dff3ee09305ebc85ac0201c0"
+    },
+    {
+      "file": "implement-feature/examples/README.md",
+      "sha256": "ec6830d9a18a4b27ab65044cb6ec749d50d42a2c8e81b406f40971970ac7d4ad"
+    },
+    {
+      "file": "implement-feature/references/01-truy-vet-va-hien-thuc.md",
+      "sha256": "eee758ef145fd82fbf7dbbdada1dd66e05d9fd946e00ef9b949d9c223af1ec13"
+    },
+    {
+      "file": "implement-feature/references/client-implementation.md",
+      "sha256": "753c6b432345ac0ef8c31249ca652437dbaafdfc33859b08014ecd39e1dbd375"
+    },
+    {
+      "file": "implement-feature/references/handoff-and-diff.md",
+      "sha256": "20e3422b0182a0c73a139091dfc724d8be6078488f2dacca676362b649fbfecf"
+    },
+    {
+      "file": "implement-feature/references/procedure.md",
+      "sha256": "60a7238471d03aea03317596197d1608f7093f107e02a3c13668d5518cce26ce"
+    },
+    {
+      "file": "implement-feature/references/server-implementation.md",
+      "sha256": "dcf12c4afc69709eebfd1f8560dd5eb62a07a5c93a61c7e142410fb59df38c93"
+    },
+    {
+      "file": "utc-screen-skill/README.md",
+      "sha256": "daac97f4a3530d0a9eedaa225f4abf526ec8ca08be1396c12a9589315460da3a"
+    },
+    {
+      "file": "utc-screen-skill/SKILL.md",
+      "sha256": "12cf897ecd62d0bbc773a4744e97d3bebc836f4bbecb9074886b3c3021bb9d58"
+    },
+    {
+      "file": "utc-screen-skill/huong-dan/01_Quy_trinh_12_buoc.md",
+      "sha256": "531ad5c64e3d55605f4a7d7d7cbfdffe19c7b72a2e2f455a4b4ada11269a78e7"
+    },
+    {
+      "file": "utc-screen-skill/huong-dan/02_Quy_tac_sinh_ca.md",
+      "sha256": "4c1995d2bb6b76caf3067a941040c348b7094fc58b3a76cf39fdf836bd83055f"
+    },
+    {
+      "file": "utc-screen-skill/huong-dan/03_Anh_xa_Excel_JSON.md",
+      "sha256": "663481d6c97cae907b7f95f457c892e861f756d0693280d3c435aa5a1d461733"
+    },
+    {
+      "file": "utc-screen-skill/huong-dan/04_Mau_lenh_giao_viec_cho_AI.md",
+      "sha256": "2bd5804d1fde90178e5f77e27952468e9d8c58689ad8941dbe2908e0e68bcf13"
+    },
+    {
+      "file": "utc-screen-skill/mau/Mau_UTC_Screen.xlsx",
+      "sha256": "c398842dc68733670f88de2e1ecd107268a53efbc8fcf4f0146170c998b2db31"
+    },
+    {
+      "file": "utc-screen-skill/schema/utc-spec.schema.json",
+      "sha256": "d2f2f00e9c9e2129dc448916ee3d01ca48d67277751e80455fc99b18d69307ca"
+    },
+    {
+      "file": "utc-screen-skill/scripts/chuan_bi_dd.py",
+      "sha256": "1671863609e7f51a33794eda1bf09874eb7e9031df235d180d6372bbebad7e46"
+    },
+    {
+      "file": "utc-screen-skill/scripts/kiem_tra_excel.py",
+      "sha256": "38a79fc4553c2a5a2cc6d3f5c998b96ef9893afca25cdac19d6eb9fbc7cefbc8"
+    },
+    {
+      "file": "utc-screen-skill/scripts/kiem_tra_utc.py",
+      "sha256": "d6409230f3d9a9d89b3f16ee896f68b929df79ade0ffcabc8ffe2cd14350baa4"
+    },
+    {
+      "file": "utc-screen-skill/scripts/tao_utc.py",
+      "sha256": "d267017586e52a97428bbb4f3caf12aa77f3d2b19a02d7e7833a1807a686cb6c"
+    },
+    {
+      "file": "utc-screen-skill/tham-chieu/Doi_chieu_DD_va_UTC.md",
+      "sha256": "68ec47dceac8ba3f4080d1e99bcf13f43b8855338aa98fb012a52187477be6c0"
+    },
+    {
+      "file": "utc-screen-skill/tham-chieu/Nguon_quoc_te.md",
+      "sha256": "40e61939efe9134173e1f83ce04825187061150f038be75a912f5c214b23d8cc"
+    },
+    {
+      "file": "write-tests/README.md",
+      "sha256": "ecf3f83635e5aca2aa0ef87d6e435d946f548b9cb9a10e2dbfc7772957b1c1dc"
+    },
+    {
+      "file": "write-tests/SKILL.md",
+      "sha256": "a03c46b6fc8f265606ab855f8f2aaa1a5d4977c0219d3845f5293e22ed8a2cab"
+    },
+    {
+      "file": "write-tests/checklists/quality-gates.md",
+      "sha256": "43d3fa1e2cdf2169590a9391fb8e716760fc7ab60180dca44e6087633df170ff"
+    },
+    {
+      "file": "write-tests/examples/README.md",
+      "sha256": "6355705668bba82bc341f18144120576c0b0e5eac45b25e77aee565b43255b63"
+    },
+    {
+      "file": "write-tests/references/01-thiet-ke-va-thuc-thi-test.md",
+      "sha256": "1c8d5e7b655334f8b06001c4377e9395c3d4aad140b895032b9ff7862237b7f5"
+    },
+    {
+      "file": "write-tests/references/procedure.md",
+      "sha256": "ef1db186c3c755a029bc5a3465b2506922b7014d79609d1268c9fcf0798f78a7"
+    },
+    {
+      "file": "write-tests/references/test-data-safety.md",
+      "sha256": "a838420e2c6ed7060f195392865448732f7bac949c174ec740a54db6f3cd371c"
+    },
+    {
+      "file": "write-tests/references/test-matrix.md",
+      "sha256": "4fcdf7f47589331e29c161bb4af80db32f6abe5c42053fdba07808efcea04826"
+    },
+    {
+      "file": "write-tests/references/verification-report.md",
+      "sha256": "38f39b64d1f9f234215d5ed643e0bec67ad294dbd8c42a42d2cc214945844a64"
+    }
+  ]
+}

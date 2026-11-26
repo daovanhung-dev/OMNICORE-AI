@@ -1,0 +1,319 @@
+{
+  "schema": 1,
+  "common": [
+    "AGENTS.md",
+    "context-map.md",
+    "core/agent-control.md",
+    "rules/shared.md",
+    "project/PROJECT.md",
+    "project/STATE.md",
+    "workflows/worklog.md",
+    "core/task-routing.md",
+    "core/context-loading.md",
+    "core/evidence-control.md",
+    "context-manifest.json",
+    "core/execution-gates.md",
+    "core/task-session.md",
+    "core/engine-limits.md"
+  ],
+  "tasks": {
+    "onboard": {
+      "workflow": "workflows/onboard.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md"
+      ]
+    },
+    "create-codebase": {
+      "workflow": "workflows/create-codebase.md",
+      "skills": [
+        "skills/create-codebase/SKILL.md"
+      ],
+      "context": [
+        "architecture/BE-FE.md",
+        "codebase/INDEX.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "codebase/symbol-contract.md",
+        "technology-profiles/INDEX.md",
+        "validators/README.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "coding-api": {
+      "workflow": "workflows/coding.md",
+      "skills": [
+        "skills/implement-feature/SKILL.md",
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/backend.md",
+        "architecture/BE-FE.md",
+        "codebase/backend.md",
+        "codebase/symbol-contract.md",
+        "technology-profiles/INDEX.md",
+        "validators/README.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "coding-screen": {
+      "workflow": "workflows/screen-implementation.md",
+      "skills": [
+        "skills/implement-feature/SKILL.md",
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/frontend.md",
+        "architecture/BE-FE.md",
+        "codebase/frontend.md",
+        "codebase/symbol-contract.md",
+        "technology-profiles/INDEX.md",
+        "validators/README.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "dd-api": {
+      "workflow": "workflows/create-dd.md",
+      "skills": [
+        "skills/create-dd-api/SKILL.md"
+      ],
+      "context": [
+        "rules/backend.md",
+        "skills/CONTEXT.md",
+        "core/original-skills.md",
+        "original-skills.json"
+      ],
+      "original_skills": [
+        "skills-original/create_dd_api/docs/dd/createDD_MARKDOWN_SKILL.md"
+      ]
+    },
+    "dd-screen": {
+      "workflow": "workflows/create-dd.md",
+      "skills": [
+        "skills/create-dd-screen/SKILL.md"
+      ],
+      "context": [
+        "rules/frontend.md",
+        "skills/CONTEXT.md",
+        "core/original-skills.md",
+        "original-skills.json"
+      ],
+      "original_skills": [
+        "skills-original/create_dd_screen/README.md"
+      ]
+    },
+    "dd-module-mobile": {
+      "workflow": "workflows/create-dd.md",
+      "skills": [
+        "skills/create-dd-module/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "skills/CONTEXT.md",
+        "core/original-skills.md",
+        "original-skills.json"
+      ],
+      "original_skills": [
+        "skills-original/create-dd-mobile/SKILL.md"
+      ]
+    },
+    "utc-screen": {
+      "workflow": "workflows/utc-screen.md",
+      "skills": [
+        "skills/utc-screen-skill/SKILL.md"
+      ],
+      "context": [
+        "rules/frontend.md",
+        "skills/CONTEXT.md",
+        "core/original-skills.md",
+        "original-skills.json"
+      ],
+      "original_skills": [
+        "skills-original/utc-screen-skill/SKILL.md"
+      ]
+    },
+    "fix": {
+      "workflow": "workflows/fixbug.md",
+      "skills": [
+        "skills/fix-bug/SKILL.md",
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "test": {
+      "workflow": "workflows/test.md",
+      "skills": [
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "review": {
+      "workflow": "workflows/review.md",
+      "skills": [
+        "skills/code-review/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "skills/CONTEXT.md",
+        "core/original-skills.md",
+        "original-skills.json"
+      ],
+      "original_skills": [
+        "skills-original/code-review/SKILL.md"
+      ]
+    },
+    "contract-change": {
+      "workflow": "workflows/contract-change.md",
+      "skills": [
+        "skills/create-dd-api/SKILL.md",
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/backend.md",
+        "rules/frontend.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "worklog": {
+      "workflow": "workflows/worklog.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md"
+      ]
+    },
+    "requirement-to-bd": {
+      "workflow": "workflows/01-requirement-to-bd.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md"
+      ]
+    },
+    "refactor": {
+      "workflow": "workflows/09-refactor.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md"
+      ]
+    },
+    "deploy": {
+      "workflow": "workflows/10-deploy.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md"
+      ]
+    },
+    "update-context": {
+      "workflow": "workflows/11-update-context.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md"
+      ]
+    },
+    "coding-fullstack": {
+      "workflow": "workflows/coding.md",
+      "skills": [
+        "skills/implement-feature/SKILL.md",
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "technology-profiles/INDEX.md",
+        "validators/README.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "test-api": {
+      "workflow": "workflows/test.md",
+      "skills": [
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "test-screen": {
+      "workflow": "workflows/test.md",
+      "skills": [
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "test-integration": {
+      "workflow": "workflows/test.md",
+      "skills": [
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "architecture-review": {
+      "workflow": "workflows/review.md",
+      "skills": [
+        "skills/code-review/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "technology-profiles/INDEX.md",
+        "validators/README.md",
+        "skills/CONTEXT.md",
+        "core/original-skills.md",
+        "original-skills.json"
+      ],
+      "original_skills": [
+        "skills-original/code-review/SKILL.md"
+      ]
+    },
+    "utc-api": {
+      "workflow": "workflows/utc-api.md",
+      "skills": [
+        "skills/write-tests/SKILL.md"
+      ],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md",
+        "skills/CONTEXT.md"
+      ]
+    },
+    "database-migration": {
+      "workflow": "workflows/database-migration.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md"
+      ]
+    },
+    "initialize-project": {
+      "workflow": "workflows/onboard.md",
+      "skills": [],
+      "context": [
+        "rules/shared.md",
+        "rules/backend.md",
+        "rules/frontend.md"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Đặc tả nền máy chủ
+Tên tệp và biểu tượng dưới đây là hợp đồng trách nhiệm của nền được tạo, không phải khẳng định nguồn hiện hành. Chọn thành phần theo phạm vi được duyệt. Khi hiện thực, bổ sung chữ ký kiểu cụ thể, trạng thái, lỗi và ca kiểm thử theo `symbol-contract.md`.
+| Tệp | Biểu tượng | Đặc tả |
+|---|---|---|
+| [`app/main.*`](backend/01-app-main.md) | `create_app(config)`, `health_live()`, `health_ready()` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/api/v1.*`](backend/02-app-api-v1.md) | `register_routes(router)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/config.*`](backend/03-app-core-config.md) | `Settings`, `get_settings()` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/constants.*`](backend/04-app-core-constants.md) | `ErrorCode / Role / Defaults` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/database.*`](backend/05-app-core-database.md) | `build_database_url(settings)`, `build_engine(settings)`, `build_session_factory(engine)`, `get_db()`, `execute_query(session, statement, params)`, `query_one(session, statement, params)`, `query_many(session, statement, params)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/responses.*`](backend/06-app-core-responses.md) | `ErrorDetail`, `success_response(data, code, trace_id)`, `error_response(error, trace_id)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/trace.*`](backend/07-app-core-trace.md) | `create_trace_id()`, `validate_trace_id(value)`, `set_trace_id(value)`, `get_current_trace_id()`, `reset_trace_id(token)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/middleware.*`](backend/08-app-core-middleware.md) | `TraceIdMiddleware.dispatch(request, next)`, `http_exception_handler(request, error)`, `request_validation_exception_handler(request, error)`, `unhandled_exception_handler(request, error)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/security/password.*`](backend/09-app-core-security-password.md) | `hash_password(password)`, `verify_password(password, hash)`, `needs_password_rehash(hash)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/security/access_token.*`](backend/10-app-core-security-access_token.md) | `create_access_token(claims, settings)`, `decode_access_token(token, settings)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/core/security/refresh_token.*`](backend/11-app-core-security-refresh_token.md) | `generate_refresh_token()`, `hash_refresh_token(token)`, `compare_refresh_token(token, hash)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/utils/auth.*`](backend/12-app-utils-auth.md) | `extract_bearer_token(header)`, `validate_access_claims(claims, policy)`, `validate_current_user_request(request, required_permission)`, `IssuedTokens`, `issue_tokens(principal)`, `build_auth_payload(principal, tokens)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/utils/validate.*`](backend/13-app-utils-validate.md) | `normalize_email(value)`, `require_non_blank(value)`, `parse_integer(value, bounds)`, `normalize_sort(value, allowlist)`, `normalize_search_query(value)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/service/email/provider.*`](backend/14-app-service-email-provider.md) | `EmailProvider`, `dispatch(message)`, `get_provider(settings)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/service/object_storage/provider.*`](backend/15-app-service-object_storage-provider.md) | `StorageProvider`, `upload(object, content)`, `delete(object_id)`, `create_signed_url(object_id, ttl)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/service/ai/provider.*`](backend/16-app-service-ai-provider.md) | `AIService`, `generate(input)`, `chat(messages)`, `list_models()`, `health_check()` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/modules/<nhom>/<api>/models.*`](backend/17-app-modules--nhom---api--models.md) | `Request / Response / Error` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/modules/<nhom>/<api>/validate.*`](backend/18-app-modules--nhom---api--validate.md) | `validate_request(raw)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/modules/<nhom>/<api>/query.*`](backend/19-app-modules--nhom---api--query.md) | `SELECT_… / INSERT_… / UPDATE_…` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |
+| [`app/modules/<nhom>/<api>/view.*`](backend/20-app-modules--nhom---api--view.md) | `handle(request, dependencies)` | Quyền sở hữu, đầu vào/ra, lỗi và kiểm thử theo trang chi tiết. |

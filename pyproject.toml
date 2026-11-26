@@ -1,0 +1,16 @@
+[project]
+name = "omnicore-ai"
+version = "0.1.0"
+description = "OMNICORE AI monorepo Python workspace"
+requires-python = ">=3.12"
+
+[tool.uv.workspace]
+members = ["apps/api", "apps/ai-api"]
+
+[tool.pytest.ini_options]
+testpaths = ["apps/api/tests", "apps/ai-api/tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

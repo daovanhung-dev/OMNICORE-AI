@@ -1,0 +1,601 @@
+{
+  "metadata": {
+    "screen_id": "SH-01",
+    "screen_name": "Danh mục mẫu",
+    "module": "Dùng chung",
+    "route": "/items",
+    "actor": "Khách",
+    "version": "1.0",
+    "dd_version": "1.0",
+    "dd_status": "Đặc tả mẫu",
+    "runtime_status": "Chưa nghiệm thu trình duyệt",
+    "source_name": "reference/frontend/docs/dd/SH-01"
+  },
+  "overall": {
+    "objective": "Tải và phân trang danh mục",
+    "states": [
+      "Tải",
+      "Thành công",
+      "Rỗng",
+      "Lỗi"
+    ],
+    "security": "API mẫu công khai chỉ đọc"
+  },
+  "apis": [
+    {
+      "id": "API-001",
+      "method": "GET",
+      "path": "/api/v1/items",
+      "source_ref": "04-api-integration.md",
+      "event_ids": [
+        "EV-01",
+        "EV-02",
+        "EV-03",
+        "EV-04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-S01",
+      "description": "Mở tuyến trực tiếp",
+      "source_ref": "00-overview.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-S02",
+      "description": "Mở tuyến gốc",
+      "source_ref": "06-navigation.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-S03",
+      "description": "Lỗi tải",
+      "source_ref": "04-api-integration.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-S04",
+      "description": "Dữ liệu rỗng",
+      "source_ref": "05-business-rules.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-S05",
+      "description": "Bố cục hẹp",
+      "source_ref": "07-test-cases.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-E01",
+      "description": "Tiêu đề Danh mục",
+      "source_ref": "01-ui-elements.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-E02",
+      "description": "Trạng thái tải/kết quả/lỗi",
+      "source_ref": "01-ui-elements.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-E03",
+      "description": "Tên mục",
+      "source_ref": "01-ui-elements.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-E04",
+      "description": "Khóa ở trang 1",
+      "source_ref": "01-ui-elements.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-E05",
+      "description": "Khóa khi hết dữ liệu",
+      "source_ref": "01-ui-elements.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-E06",
+      "description": "Thử lại",
+      "source_ref": "01-ui-elements.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-V01",
+      "description": "Tải lần đầu",
+      "source_ref": "02-events.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-V02",
+      "description": "Trang trước",
+      "source_ref": "02-events.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-V03",
+      "description": "Trang sau",
+      "source_ref": "02-events.md",
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "REQ-V04",
+      "description": "Thử lại",
+      "source_ref": "02-events.md",
+      "design_status": "Đã xác nhận"
+    }
+  ],
+  "elements": [
+    {
+      "id": "EL-01",
+      "name": "Tiêu đề",
+      "type": "Văn bản",
+      "source_ref": "01-ui-elements.md",
+      "properties": "Tiêu đề Danh mục",
+      "event_ids": [],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EL-02",
+      "name": "Trạng thái",
+      "type": "Văn bản",
+      "source_ref": "01-ui-elements.md",
+      "properties": "Trạng thái tải/kết quả/lỗi",
+      "event_ids": [],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EL-03",
+      "name": "Danh sách",
+      "type": "Danh sách",
+      "source_ref": "01-ui-elements.md",
+      "properties": "Tên mục",
+      "event_ids": [],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EL-04",
+      "name": "Trước",
+      "type": "Nút",
+      "source_ref": "01-ui-elements.md",
+      "properties": "Khóa ở trang 1",
+      "event_ids": [
+        "EV-02"
+      ],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EL-05",
+      "name": "Tiếp",
+      "type": "Nút",
+      "source_ref": "01-ui-elements.md",
+      "properties": "Khóa khi hết dữ liệu",
+      "event_ids": [
+        "EV-03"
+      ],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EL-06",
+      "name": "Tải lại",
+      "type": "Nút",
+      "source_ref": "01-ui-elements.md",
+      "properties": "Thử lại",
+      "event_ids": [
+        "EV-04"
+      ],
+      "design_status": "Đã xác nhận"
+    }
+  ],
+  "events": [
+    {
+      "id": "EV-01",
+      "name": "Tải lần đầu",
+      "trigger": "Mở tuyến",
+      "source_ref": "02-events.md",
+      "element_ids": [],
+      "api_ids": [
+        "API-001"
+      ],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EV-02",
+      "name": "Trang trước",
+      "trigger": "Bấm Trước",
+      "source_ref": "02-events.md",
+      "element_ids": [
+        "EL-04"
+      ],
+      "api_ids": [
+        "API-001"
+      ],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EV-03",
+      "name": "Trang sau",
+      "trigger": "Bấm Tiếp",
+      "source_ref": "02-events.md",
+      "element_ids": [
+        "EL-05"
+      ],
+      "api_ids": [
+        "API-001"
+      ],
+      "design_status": "Đã xác nhận"
+    },
+    {
+      "id": "EV-04",
+      "name": "Thử lại",
+      "trigger": "Bấm Tải lại",
+      "source_ref": "02-events.md",
+      "element_ids": [
+        "EL-06"
+      ],
+      "api_ids": [
+        "API-001"
+      ],
+      "design_status": "Đã xác nhận"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "B-01",
+      "description": "Chưa nghiệm thu ảnh thiết kế và trình duyệt",
+      "source_ref": "images/README.md",
+      "status": "Chưa xác minh"
+    }
+  ],
+  "test_cases": {
+    "screen": [
+      {
+        "id": "TC-S01",
+        "requirement_ids": [
+          "REQ-S01"
+        ],
+        "target_id": "SH-01",
+        "group": "Chức năng",
+        "title": "Mở tuyến trực tiếp",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items"
+        ],
+        "expected": "Tiêu đề Danh mục và Mục thứ nhất hiển thị",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "00-overview.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-S02",
+        "requirement_ids": [
+          "REQ-S02"
+        ],
+        "target_id": "SH-01",
+        "group": "Chức năng",
+        "title": "Mở tuyến gốc",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /"
+        ],
+        "expected": "Màn hình Danh mục và Mục thứ nhất hiển thị",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "06-navigation.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-S03",
+        "requirement_ids": [
+          "REQ-S03"
+        ],
+        "target_id": "SH-01",
+        "group": "Chức năng",
+        "title": "Lỗi tải",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mô phỏng HTTP 503",
+          "Bấm Tải lại"
+        ],
+        "expected": "Hiện Không tải được dữ liệu. Hãy thử lại.",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "04-api-integration.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-S04",
+        "requirement_ids": [
+          "REQ-S04"
+        ],
+        "target_id": "SH-01",
+        "group": "Chức năng",
+        "title": "Dữ liệu rỗng",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mô phỏng data.items rỗng",
+          "Bấm Tải lại"
+        ],
+        "expected": "Hiện Không có dữ liệu, danh sách không có hàng",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "05-business-rules.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-S05",
+        "requirement_ids": [
+          "REQ-S05"
+        ],
+        "target_id": "SH-01",
+        "group": "Chức năng",
+        "title": "Bố cục hẹp",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở ở 360px"
+        ],
+        "expected": "Chiều rộng tài liệu không vượt viewport 360px",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "07-test-cases.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      }
+    ],
+    "elements": [
+      {
+        "id": "TC-E01",
+        "requirement_ids": [
+          "REQ-E01"
+        ],
+        "target_id": "EL-01",
+        "group": "Chức năng",
+        "title": "Tiêu đề",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items"
+        ],
+        "expected": "Tiêu đề hiển thị đúng chữ Danh mục",
+        "api_ids": [],
+        "source_refs": [
+          "01-ui-elements.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-E02",
+        "requirement_ids": [
+          "REQ-E02"
+        ],
+        "target_id": "EL-02",
+        "group": "Chức năng",
+        "title": "Trạng thái",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items"
+        ],
+        "expected": "Hiển thị Trang 1 · 2 mục khi tải xong",
+        "api_ids": [],
+        "source_refs": [
+          "01-ui-elements.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-E03",
+        "requirement_ids": [
+          "REQ-E03"
+        ],
+        "target_id": "EL-03",
+        "group": "Chức năng",
+        "title": "Danh sách",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items"
+        ],
+        "expected": "Hàng đầu hiển thị văn bản Mục thứ nhất",
+        "api_ids": [],
+        "source_refs": [
+          "01-ui-elements.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-E04",
+        "requirement_ids": [
+          "REQ-E04"
+        ],
+        "target_id": "EL-04",
+        "group": "Chức năng",
+        "title": "Trước",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items"
+        ],
+        "expected": "Nút Trước bị vô hiệu hóa tại trang 1",
+        "api_ids": [],
+        "source_refs": [
+          "01-ui-elements.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-E05",
+        "requirement_ids": [
+          "REQ-E05"
+        ],
+        "target_id": "EL-05",
+        "group": "Chức năng",
+        "title": "Tiếp",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items",
+          "Bấm Tiếp"
+        ],
+        "expected": "Nút Tiếp bị vô hiệu hóa tại trang cuối",
+        "api_ids": [],
+        "source_refs": [
+          "01-ui-elements.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-E06",
+        "requirement_ids": [
+          "REQ-E06"
+        ],
+        "target_id": "EL-06",
+        "group": "Chức năng",
+        "title": "Tải lại",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items",
+          "Bấm Tải lại"
+        ],
+        "expected": "Bấm Tải lại tải lại trang hiện tại",
+        "api_ids": [],
+        "source_refs": [
+          "01-ui-elements.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      }
+    ],
+    "events": [
+      {
+        "id": "TC-V01",
+        "requirement_ids": [
+          "REQ-V01"
+        ],
+        "target_id": "EV-01",
+        "group": "Chức năng",
+        "title": "Tải lần đầu",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mở /items"
+        ],
+        "expected": "Hiển thị Mục thứ nhất ở trang 1",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "02-events.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-V02",
+        "requirement_ids": [
+          "REQ-V02"
+        ],
+        "target_id": "EV-02",
+        "group": "Chức năng",
+        "title": "Trang trước",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Bấm Tiếp",
+          "Bấm Trước"
+        ],
+        "expected": "Hiển thị Mục thứ nhất ở trang 1",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "02-events.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-V03",
+        "requirement_ids": [
+          "REQ-V03"
+        ],
+        "target_id": "EV-03",
+        "group": "Chức năng",
+        "title": "Trang sau",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Bấm Tiếp"
+        ],
+        "expected": "Hiển thị Mục thứ hai ở trang 2",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "02-events.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      },
+      {
+        "id": "TC-V04",
+        "requirement_ids": [
+          "REQ-V04"
+        ],
+        "target_id": "EV-04",
+        "group": "Chức năng",
+        "title": "Thử lại",
+        "precondition": "Máy chủ mẫu và DB cô lập khả dụng",
+        "data": "Hai mục mẫu",
+        "steps": [
+          "Mô phỏng lỗi 503",
+          "Bấm Tải lại",
+          "Khôi phục API",
+          "Bấm Tải lại"
+        ],
+        "expected": "Hiển thị Mục thứ nhất khi API phục hồi",
+        "api_ids": [
+          "API-001"
+        ],
+        "source_refs": [
+          "02-events.md"
+        ],
+        "priority": "Cao",
+        "design_status": "Đã xác nhận"
+      }
+    ]
+  }
+}

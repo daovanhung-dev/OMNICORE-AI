@@ -1,0 +1,2 @@
+# Nạp và đồng bộ ngữ cảnh
+Khai báo đường dẫn, phạm vi và lý do trước khi đọc; nạp nguồn theo thứ tự router, registry, hồ sơ, nhật ký cùng loại, kiến trúc, quy tắc, workflow, skill và nguồn. `build-context.py --refresh` tạo cây tài liệu hiện trạng; `inventory.py --repo .` tạo danh mục biểu tượng. Không coi kết quả phân tích cú pháp là chứng minh hành vi. Kiểm tra phiên bản nguồn bằng hash; mọi biểu tượng mới phải được đối chiếu hợp đồng và kiểm thử. Không xuất bí mật.

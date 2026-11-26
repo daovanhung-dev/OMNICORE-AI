@@ -1,0 +1,10 @@
+{
+  "name": "omnicore-ai",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "web:start": "npm --prefix apps/web start",
+    "web:build": "npm --prefix apps/web run build",
+    "web:test": "npm --prefix apps/web test -- --watch=false"
+  }
+}

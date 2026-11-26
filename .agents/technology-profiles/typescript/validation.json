@@ -1,0 +1,7 @@
+{
+  "profile": "typescript",
+  "language": "TypeScript thuần",
+  "state": "REFERENCE_TESTED",
+  "generator": "fastapi-typescript",
+  "validator": "validators/validate_architecture.py"
+}

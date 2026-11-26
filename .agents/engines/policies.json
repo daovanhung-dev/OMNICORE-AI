@@ -1,0 +1,109 @@
+{
+  "onboard": [
+    "context"
+  ],
+  "create-codebase": [
+    "architecture",
+    "api-test",
+    "fe-test",
+    "build",
+    "context"
+  ],
+  "coding-api": [
+    "contract",
+    "architecture",
+    "api-test",
+    "context"
+  ],
+  "coding-screen": [
+    "contract",
+    "architecture",
+    "fe-test",
+    "build",
+    "browser",
+    "context"
+  ],
+  "coding-fullstack": [
+    "contract",
+    "architecture",
+    "api-test",
+    "fe-test",
+    "build",
+    "browser",
+    "integration",
+    "context"
+  ],
+  "dd-api": [
+    "dd-api"
+  ],
+  "dd-screen": [
+    "dd-screen"
+  ],
+  "dd-module-mobile": [
+    "dd-module"
+  ],
+  "utc-screen": [
+    "utc"
+  ],
+  "fix": [
+    "contract",
+    "regression",
+    "architecture",
+    "context"
+  ],
+  "test": [
+    "contract",
+    "api-test"
+  ],
+  "review": [
+    "review-report"
+  ],
+  "contract-change": [
+    "contract",
+    "integration",
+    "context"
+  ],
+  "worklog": [
+    "worklog-report"
+  ],
+  "requirement-to-bd": [
+    "bd-report"
+  ],
+  "refactor": [
+    "contract",
+    "architecture",
+    "api-test",
+    "context"
+  ],
+  "deploy": [
+    "deployment"
+  ],
+  "update-context": [
+    "context"
+  ],
+  "test-api": [
+    "contract",
+    "api-test"
+  ],
+  "test-screen": [
+    "fe-test",
+    "browser"
+  ],
+  "test-integration": [
+    "contract",
+    "integration"
+  ],
+  "architecture-review": [
+    "review-report"
+  ],
+  "utc-api": [
+    "utc-api"
+  ],
+  "database-migration": [
+    "migration",
+    "context"
+  ],
+  "initialize-project": [
+    "context"
+  ]
+}

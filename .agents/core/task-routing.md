@@ -1,0 +1,2 @@
+# Điều phối nhiệm vụ
+`routing.json` là danh mục tác vụ duy nhất. Nạp các đường dẫn chung trước khi chọn tác vụ; chọn một tuyến chính và các tuyến phụ có phụ thuộc. Không chạy review độc lập nếu không có yêu cầu. Khi thiếu dữ liệu hợp đồng, ghi trở ngại thay vì tự bổ sung nghiệp vụ. `context-manifest.json` định danh registry và công cụ. Công cụ tạo nền chỉ chạy với hồ sơ công nghệ đã được phê duyệt.

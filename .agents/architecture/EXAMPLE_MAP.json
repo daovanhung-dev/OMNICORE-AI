@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "6.0.0",
+  "mode": "TEMPLATE_ONLY",
+  "apiExamples": [
+    {
+      "path": "apps/server/app/modules/module1/api01",
+      "name": "api01",
+      "module": "module1"
+    }
+  ],
+  "screenExamples": [
+    {
+      "path": "apps/client/src/app/features/module1/screen01",
+      "name": "screen01",
+      "module": "module1"
+    }
+  ],
+  "examples": {
+    "apps/client/src/app/app.routes.ts": "apps/client/src/app/app.routes.ts.md",
+    "apps/client/src/app/core/http/api-client.service.ts": "apps/client/src/app/core/http/api-client.service.ts.md",
+    "apps/client/src/app/features/module1/screen01/data-access/screen01.service.ts": "apps/client/src/app/features/module1/screen01/data-access/screen01.service.ts.md",
+    "apps/client/src/app/features/module1/screen01/models/screen01.model.ts": "apps/client/src/app/features/module1/screen01/models/screen01.model.ts.md",
+    "apps/client/src/app/features/module1/screen01/pages/screen01-page.css": "apps/client/src/app/features/module1/screen01/pages/screen01-page.css.md",
+    "apps/client/src/app/features/module1/screen01/pages/screen01-page.html": "apps/client/src/app/features/module1/screen01/pages/screen01-page.html.md",
+    "apps/client/src/app/features/module1/screen01/pages/screen01-page.ts": "apps/client/src/app/features/module1/screen01/pages/screen01-page.ts.md",
+    "apps/client/src/app/features/module1/screen01/screen01.spec.ts": "apps/client/src/app/features/module1/screen01/screen01.spec.ts.md",
+    "apps/client/src/app/features/module1/screen01/ui/screen01-widget.ts": "apps/client/src/app/features/module1/screen01/ui/screen01-widget.ts.md",
+    "apps/client/src/app/layouts/main-layout.ts": "apps/client/src/app/layouts/main-layout.ts.md",
+    "apps/client/src/app/shared/ui/button.ts": "apps/client/src/app/shared/ui/button.ts.md",
+    "apps/client/src/main.ts": "apps/client/src/main.ts.md",
+    "apps/server/app/api/v1.py": "apps/server/app/api/v1.md",
+    "apps/server/app/core/config.py": "apps/server/app/core/config.md",
+    "apps/server/app/core/database.py": "apps/server/app/core/database.md",
+    "apps/server/app/core/security/access_token.py": "apps/server/app/core/security/access_token.md",
+    "apps/server/app/main.py": "apps/server/app/main.md",
+    "apps/server/app/modules/module1/api01/__init__.py": "apps/server/app/modules/module1/api01/__init__.md",
+    "apps/server/app/modules/module1/api01/models.py": "apps/server/app/modules/module1/api01/models.md",
+    "apps/server/app/modules/module1/api01/query.py": "apps/server/app/modules/module1/api01/query.md",
+    "apps/server/app/modules/module1/api01/validate.py": "apps/server/app/modules/module1/api01/validate.md",
+    "apps/server/app/modules/module1/api01/view.py": "apps/server/app/modules/module1/api01/view.md",
+    "apps/server/app/service/provider.py": "apps/server/app/service/provider.md",
+    "apps/server/app/utils/auth.py": "apps/server/app/utils/auth.md",
+    "apps/server/tests/test_api01.py": "apps/server/tests/test_api01.md"
+  },
+  "sourceOfTruth": "Repository đích qua build-context.py; map này chỉ mô tả các file ví dụ."
+}

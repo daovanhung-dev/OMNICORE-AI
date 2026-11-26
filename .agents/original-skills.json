@@ -1,0 +1,1492 @@
+{
+  "schema": 2,
+  "status": "COMPLETE_COMPOSITE",
+  "source_archive_sha256": "f3b60619cc01765416e9e81a2a34b3184be3af4151319b888b3b662d5da33ab0",
+  "source_archive_count": 214,
+  "supplement_count": 30,
+  "supplement_git_commit": "f28d71162c654b243b52158761d8ecd6d632e389",
+  "expected_count": 244,
+  "copied_count": 244,
+  "groups": {
+    "INDEX.md": 1,
+    "code-review": 3,
+    "create-dd-mobile": 134,
+    "create_dd_api": 37,
+    "create_dd_screen": 39,
+    "utc-screen-skill": 30
+  },
+  "files": {
+    "INDEX.md": {
+      "sha256": "6a427805785e35d194301380ea031a1c22ff3117ce485220983e5d31d1ad553f",
+      "git_blob": "57b35f4ebe15173855c4b4977198f5ddb26b5d02",
+      "size": 1360,
+      "origin": "Study2Work.zip"
+    },
+    "code-review/SKILL.md": {
+      "sha256": "b0c6bd0b33c264dfc46ee05f983f01aebd688472f994ff2005b9eaa4baaa2825",
+      "git_blob": "09d3672cb539b81831991faaf5f29b7015e735dd",
+      "size": 6413,
+      "origin": "Study2Work.zip"
+    },
+    "code-review/references/report-format.md": {
+      "sha256": "2c8785eb4c614b7cfbfb8d0db5dccd45ea8b28ee4e10da38d6226684b9267759",
+      "git_blob": "3fb21d9fb936bc20e3c53599a5c441d907c74b34",
+      "size": 1610,
+      "origin": "Study2Work.zip"
+    },
+    "code-review/references/review-checklist.md": {
+      "sha256": "85e11cd76d929bb1988cb6dff5c7b5b63a539ecb6eb89eed0934273fe22f8694",
+      "git_blob": "47b8696cfacca1c042748efde486acbda54ece15",
+      "size": 3240,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/README.md": {
+      "sha256": "1343ead0fb627fce05311b96fd0765580dabdb280cd014d643e40aac3d0b9a76",
+      "git_blob": "8c3d80def8e341277a8c49b308eff4f10ff0d1f0",
+      "size": 1294,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/SKILL.md": {
+      "sha256": "023128d720a995d77393b4f7c1312ad321d39a6d629d47437488ea206eb5426c",
+      "git_blob": "b523cc0408c322ba726e10e795aaf165b083cff5",
+      "size": 2138,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/checklists/authoring.md": {
+      "sha256": "9eea9dc60c4ec237556882894a8e72fa3186c343f1991570f876aa1181f40f74",
+      "git_blob": "208c4beb0227b7d511976c139a3e802d2824c3bf",
+      "size": 703,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/checklists/definition-of-ready-done.md": {
+      "sha256": "01b9ca775948faa97063e4d9f9536dae8dfed206fc5ff660a7dd751ca4e1c301",
+      "git_blob": "d51bf121efa9759ed75f5bfe2cb608d15b862593",
+      "size": 665,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/checklists/preflight.md": {
+      "sha256": "0b4ce0862b654220a849d015c3891764b268ca27882aec2aae86ba6ff1e7af12",
+      "git_blob": "0800cd814850740b99fe2f77b94b3b42a18fc014",
+      "size": 516,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/checklists/review.md": {
+      "sha256": "79d453ede653fd3a5266c144627e207530c92a096deb0def3c1298cf31fe6db5",
+      "git_blob": "00c3ae3d01072658f34fab59a519e83c379e3a7a",
+      "size": 871,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/Function_List.md": {
+      "sha256": "bf7d3bac0a0de869370afe4cb444f0987c8ea0121210880d672a4134d2ebce18",
+      "git_blob": "5b526ad299a276d1dac0e84d7338cee097b814e9",
+      "size": 11230,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/Implementation_Delta_2026-07-15_Logbug_14-7-26.md": {
+      "sha256": "c1d0611dd38ccd125aae5e088ea59e1258550b394366945b9b5bf31ce9e4b423",
+      "git_blob": "5f49ea80f11d4e2b4732bd147f1466ecc1657dac",
+      "size": 1839,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/Implementation_Delta_2026-08-17_Daily_Routine_Onboarding.md": {
+      "sha256": "07c278935ad8e7a5b90eb4abb0169a775d541a96bc060276187ceb6cd5602925",
+      "git_blob": "0c6d3f9e76694ddac08763f6daf272b351abec84",
+      "size": 2467,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/Import_File.md": {
+      "sha256": "3cbcd6ede405da8bc95e5be87f1578bcc23dcacaa5cb73bdef10354cc5680661",
+      "git_blob": "e9b5965e71d327b6d894526a5862cc65509a68fd",
+      "size": 5865,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/List_Features.md": {
+      "sha256": "95c19bf97b72ecd57e585e11a1a72c8cb510f68a28b86104ce7a096012bf83c0",
+      "git_blob": "238625d6ff57459c43e3e057dc54ad8c8213f4ac",
+      "size": 12432,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/Overall.md": {
+      "sha256": "5ac1a90b465130e759c9fe1eb61ad45a0d40326649f094aa4c075a954cdad78d",
+      "git_blob": "894122a70afe6f97924dff0f492ca4fdc168eaf4",
+      "size": 9569,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/README.md": {
+      "sha256": "41a5be714795a245d6310a359f484d051756f6bf6b22402a63ca46e98939ba18",
+      "git_blob": "0695b2fc4f61addacded149ca45db5b63340222f",
+      "size": 3687,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/Views.md": {
+      "sha256": "c7c73b4113a885a9083f5943f35f2dbeee1312010e23103be7493eea06467520",
+      "git_blob": "5472234d8431ea12ea8a5474359f7488fc9e3bbe",
+      "size": 9859,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/assets/README.md": {
+      "sha256": "899a5afe5fa3c90a4c13ece9cdea5e612bf0fa76267760790dd0b1977d34beb2",
+      "git_blob": "06c71c7c95a68d8ab27b799d5daf151afc6398f2",
+      "size": 865,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/diagrams/README.md": {
+      "sha256": "c6930f48afe443535ee205ea03cd5e4d39a224fac1d611bb15679666c57acd3e",
+      "git_blob": "72e554155ab290185c149c727a335031070c0f23",
+      "size": 936,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/01-onboarding_profile/history/CHANGELOG.md": {
+      "sha256": "7d04acadb233d8f3ddd9d473c1867073c72acb1f4d2b4100359ca92d46872be2",
+      "git_blob": "d8430c83c76b566f37b3e2cdc836be18338a202a",
+      "size": 2383,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/Function_List.md": {
+      "sha256": "1cc07541c732c70c7fef5bf6208a64c9093e39a9e94218f541a2f2fb27c70a6d",
+      "git_blob": "31b16221714e8aa63be18097927e38ea073d56ac",
+      "size": 11418,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/Implementation_Delta_2026-07-15_Logbug_14-7-26.md": {
+      "sha256": "b49910535834c751ed4e4524402133d45a19e790b97f151881ddb5b7c835b570",
+      "git_blob": "3c01317f9285aeacc1b3cf9d00ab1c0447281803",
+      "size": 1780,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/Import_File.md": {
+      "sha256": "bcfe8de8ccb1661efec51aade92c7098a92f0e334530efaba5f302dda94fe39d",
+      "git_blob": "cdef4375d083b2275859efd29fa28089d78ca14c",
+      "size": 5988,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/List_Features.md": {
+      "sha256": "6b35a12aa8cfe408f7be5c57b43fff083ba00ee5d797b7ccff09bf389d394f59",
+      "git_blob": "f7277246521c6bb6b26de26ecba6e03b964d9c22",
+      "size": 12760,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/Overall.md": {
+      "sha256": "b16ce6f8d747ae56c23f44f292682f047715badec962d9080822c765ec96d32c",
+      "git_blob": "8bfb186ca580f26ce65ceab9e30f3ee3165df5d4",
+      "size": 7947,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/README.md": {
+      "sha256": "c3145fa8f6a50c2948e6f8c59f6c786adfdfea18c853265107c8436d895e61b9",
+      "git_blob": "bd33f4a53d60e0dbf61f20241750e61abdcf358c",
+      "size": 2612,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/Views.md": {
+      "sha256": "5df583b44279620eb8e9ef21d153eb2bb4d3614fa6c13e3a21b7de7f76ce17eb",
+      "git_blob": "cfafd0829d1ccee9512dcaa5b364ccc1737d23a5",
+      "size": 9887,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/assets/README.md": {
+      "sha256": "7f8980d1f767015c9c07c8533cb8e5b946722db722db105addbcd3133607d497",
+      "git_blob": "a2be3c19c16fa7b9b42d7f098f9e5328ad4884ef",
+      "size": 859,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/diagrams/README.md": {
+      "sha256": "4d49dbf60ed4e7261389a977fbf140d641c8055e6cca8bec1eb20f57da626269",
+      "git_blob": "b6c777aa0713dc70b7a81935ae571ea1822bc721",
+      "size": 942,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/02-personal_schedule_ai/history/CHANGELOG.md": {
+      "sha256": "c4d6662bdeb846571e4553b5b83ca89df07f9b3035b872c444946205520e435c",
+      "git_blob": "81a903bf4c4a359ff764b5f7d6c9feb5441d8448",
+      "size": 1944,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Function_List.md": {
+      "sha256": "ae75f5695e20d85d79182d6eb56343291d1abb2db44a453802b6eb6ce02e9280",
+      "git_blob": "7e6fec9f7d8bea0bc9800d3e7700d0ef2e672285",
+      "size": 10923,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Implementation_Delta_2026-07-13.md": {
+      "sha256": "eafaf116282a3929267020085a12317bf22e73e0af0309ac9b7c7088c6494679",
+      "git_blob": "8e28163386e0c02be8f01eb619d53cf1c67f920e",
+      "size": 5341,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Implementation_Delta_2026-07-15_Logbug_14-7-26.md": {
+      "sha256": "96e24cb8dbd8ac1314b2bb833a37802d7c7f8b9be08b59cda3946c1badcdc2df",
+      "git_blob": "6124dd2d091534d7da3839c0b89e012991e16200",
+      "size": 1702,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Implementation_Delta_2026-08-16_Daily_Health_Hub.md": {
+      "sha256": "a694ad90ce88e0dc1378422b83d12e9c3cad2271a3de489d06bb122e5dd10a02",
+      "git_blob": "713c1f1e70947e04b399fc9e9983ae6a64ce3ae2",
+      "size": 4766,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Import_File.md": {
+      "sha256": "efdafc0f10b07cbbe44b042e0ad763892c3a7247ef4b00a886ebc98db4853394",
+      "git_blob": "526f99df4d28baecd86a41914e5afa4af03a262d",
+      "size": 5841,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/List_Features.md": {
+      "sha256": "4a7578302a41465d0c2a0d99c1e9d9dd033dfbf7f80c95b91e1ff2c13a4f4102",
+      "git_blob": "4dacb9ac7e54a4367ecbb474bc32dc0d192fde41",
+      "size": 11910,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Overall.md": {
+      "sha256": "6febd27e02ef66b3046c7e5c28469744c7e3ed6a30f7153705c5e04f445aaaa1",
+      "git_blob": "881466ad2e4ce51e3c5d8c89f63816b067646f43",
+      "size": 7797,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/README.md": {
+      "sha256": "baf3d272963fcb19ff45663a4c86e7e283c9ae79a040f2efa52596f2092b9c86",
+      "git_blob": "71a0b5f6c95ad8701a9f2fb81de1d47c32694cb4",
+      "size": 3888,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/Views.md": {
+      "sha256": "84852d9b159d1210cab0c08a0ff4617465caadf5bb6e89f3d8677a20e605e67a",
+      "git_blob": "11cd678ec9f3bb97021843f2a956116bf5f7061a",
+      "size": 9812,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/assets/README.md": {
+      "sha256": "7698192f7880f1a935872082652491153b631574c56c7e1ddf5c4fe72dad03ff",
+      "git_blob": "b2ad496a4b51a7bd1bc62d429d837d89dff30dd9",
+      "size": 870,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/diagrams/README.md": {
+      "sha256": "980adef7917bfc537bfe52de096c676af1b5fd8d74b70b284b374c840dd5b1f2",
+      "git_blob": "38e4317c89f5e3437ee069b890620556196cdd63",
+      "size": 941,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/03-dashboard_schedule/history/CHANGELOG.md": {
+      "sha256": "7a81925bfe30a69c844a67cc58bab1ca5e95bdbe67dfdd7ec49bd6a07fdc9658",
+      "git_blob": "79cbf0a6792138a6c73a4b189ef3db8bc362f6e9",
+      "size": 2478,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/Function_List.md": {
+      "sha256": "d2d4561a60c2ab3ec8d035c829c45dfe7074ded7cf6e68b61f571138ea6107e8",
+      "git_blob": "90717cb44537342eaa37f242569184c9e4fa7e97",
+      "size": 18567,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/Implementation_Delta_2026-07-15_Logbug_14-7-26.md": {
+      "sha256": "6283e10453d023c1247bd9e4ac17d82857564ded9d30a7d44c2cf49ed2f3b7aa",
+      "git_blob": "6d55cbfc904b0d595778613d137ada602fc9c8d0",
+      "size": 1420,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/Implementation_Delta_2026-08-23_Sequential_Voice_Plus.md": {
+      "sha256": "0bfa189ede309578ea67a8d8e0fbd4c4c00e9d8b5cf21dd463a74ee354727c5d",
+      "git_blob": "42295b9d90d9fc9cdf367daf460bcdaf9194f036",
+      "size": 9082,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/Import_File.md": {
+      "sha256": "833105d95138e38978f9c57d055945d57fd699d57ad57e3b37310792213d531d",
+      "git_blob": "503ad3d2fcb225fdf7aa0e5fa25dd6d425fb119f",
+      "size": 10771,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/List_Features.md": {
+      "sha256": "1e80db3ef4ff281b2e152b1aa9664c01ba2bc158ca988121cad4f6e7354ebcc6",
+      "git_blob": "d699741188b02decb45cd6ff27cc8f2a5e5cffa0",
+      "size": 21386,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/Overall.md": {
+      "sha256": "77231f0929391f5c8b8dd5ace9447090918d7aa14cf7a4eae0f4a57288d37b87",
+      "git_blob": "08a0493b74ea579c9d5afc78b6dc9df313b1de7a",
+      "size": 16464,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/README.md": {
+      "sha256": "de822bac5b8000b4a88eec6c5456c45abfc2c5513c63eaf5097df4a2d0a22086",
+      "git_blob": "df2afe7ff0818f3dce5445cb747123ff1770d73c",
+      "size": 4167,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/Views.md": {
+      "sha256": "911fc01b85283fba2d443fa6d149a7b2d60ebf50dcbd36b783cbc383ad14cded",
+      "git_blob": "b82367f9b6d9eb23ea03fb7339deb4b7843fd0b4",
+      "size": 15103,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/assets/README.md": {
+      "sha256": "8bbfceefeaaff86c622a7bcc1b510b4a8852d49755cd6a9f207c244b6c7a4b27",
+      "git_blob": "1762187468f037b84d05d65c0393436a784f5ccc",
+      "size": 1024,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/diagrams/README.md": {
+      "sha256": "7620291a2f692c5b371939dcbb84303709a11ec04b501505ac89099457aa769f",
+      "git_blob": "0b040326fd2787bde2de55edfff26b1221fce303",
+      "size": 1343,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/04-ai_chat/history/CHANGELOG.md": {
+      "sha256": "013117b3c6cf81d20eec424f58b67493b43e071dc71445bbbd4fb8865f0ea1b2",
+      "git_blob": "d0c010e6dc5ffdf2d9e6c728a52eac6baee6e6be",
+      "size": 5594,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Function_List.md": {
+      "sha256": "d5476708d3ec14e0727b23b55beb0e816b567324d5246df9751e9e2c819be63d",
+      "git_blob": "6757a43a181132b8ac481187e4c35150b3755fd0",
+      "size": 11161,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Implementation_Delta_2026-07-13.md": {
+      "sha256": "18ef71be51c320e20878a9cc27f4c32426937eff3050efd8d222f41c6c6956ad",
+      "git_blob": "283f28b67055986cfbd614453c4edbdd9e37145f",
+      "size": 2519,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Implementation_Delta_2026-07-15_Logbug_14-7-26.md": {
+      "sha256": "f7c3925b8f48fd4adf4eff1dc73e957833f7380585b2e81f271ee6a3b62d69b6",
+      "git_blob": "c4d82deda4ea7f84445f5f2b128adb002be360f4",
+      "size": 1161,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Implementation_Delta_2026-08-16_Daily_Health_Hub.md": {
+      "sha256": "2578419e800c582c68822c91244c5e546f5fe6c58240a24c05fc9c86407f525e",
+      "git_blob": "33a4a1eb2cdbb501abea0e05b25576b4d02b4124",
+      "size": 803,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Implementation_Delta_2026-08-17_Notification_Defer.md": {
+      "sha256": "a415c3abe38b19c66a44f23a2153332745c777524500c580f412ad16c65b0a5b",
+      "git_blob": "6a4bcaaa7a651405b57929b4c8e4f44c24abc439",
+      "size": 2373,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Import_File.md": {
+      "sha256": "c2e05ee4b8c67030b5faf03ea6eae5541273666ba7788ea48002623c6055ebeb",
+      "git_blob": "62bb16ec912a1fd8254d538b7498bfcb8fa58c22",
+      "size": 5987,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/List_Features.md": {
+      "sha256": "5303886755f76d0e605ae65edfe3e2986f46b5cc453682cbdc1109b3c21e3042",
+      "git_blob": "ce8034bbee53cabc270633bb01e9eb9b042fd1b8",
+      "size": 12092,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Overall.md": {
+      "sha256": "67b1778b16f7fb1d73f5a53ae6e78fb0cc7b9e0b5bfefea6f81c871183e0449d",
+      "git_blob": "eeace7e4005cef99f6fbbbc4893ae2e1dab5acd3",
+      "size": 8247,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/README.md": {
+      "sha256": "23a23d33a8ce12eae5ae9594cb745f958e1cce02c567d417662794d0aacee73b",
+      "git_blob": "9ad9a4bb19453a8f581c410a07468661a422c7eb",
+      "size": 3973,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/Views.md": {
+      "sha256": "93c13e8b2a782e2ed19ff86ad27969bab2c025e222c203d24c7cbad53722ba4a",
+      "git_blob": "7165b4003113ea378ec5113e169b60653b71c61b",
+      "size": 9979,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/assets/README.md": {
+      "sha256": "411b77dfbcf43d123f5d9c3c3932ccd500699035fe6e0371d3945dcec15248a2",
+      "git_blob": "633fdb4bcfcb07ca891ff785364b7655c2df20dd",
+      "size": 860,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/diagrams/README.md": {
+      "sha256": "ea7ec19d35159af630bd29f630391cde0e72628d4a1c20157606f2cc1134bcda",
+      "git_blob": "51fbf2c00acda946a5a09ece6e5389c94a343073",
+      "size": 955,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/05-schedule_notifications/history/CHANGELOG.md": {
+      "sha256": "103f9f3fb3c1ff448633616c421a5c63ad0512ac1a83083353767c767b056aba",
+      "git_blob": "2b9da41c920b7d72b10ba3d156d95b16da1c95f2",
+      "size": 2571,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/Function_List.md": {
+      "sha256": "b6ae2795e0c4fc47a9352d7fbb310ed587ec240a38987d9a7f81a06b2041d28d",
+      "git_blob": "ac16d4f35557ae3b406d155ea1a0af69b3f734e8",
+      "size": 10681,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/Import_File.md": {
+      "sha256": "f8534101a9cc0e056e008c7fca9851113eda3bb4df2f9771f74dbe52b0b74a19",
+      "git_blob": "c2fbccecf400a10bf1cd5948649d623be36d2aba",
+      "size": 5625,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/List_Features.md": {
+      "sha256": "097ed29e580c435a3ca9894d0dc1a0aa79aa141171c194a6cacd61a4f66924ec",
+      "git_blob": "cfd292614bd69418698c4914fffe0d0401e07431",
+      "size": 11566,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/Overall.md": {
+      "sha256": "b1e27678239a84fe5b9def50f8c92465212d170349ab1da63b1062a2ecc968a3",
+      "git_blob": "6f4db1d463f7ee209ddb600a0b9f728de11504b4",
+      "size": 8200,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/README.md": {
+      "sha256": "a6327fdea584977360015fca05003c464db3bbe343b403c682bb427b189ff941",
+      "git_blob": "884e78e5ab08a3b45a545a4f5d74b299f122de89",
+      "size": 2613,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/Views.md": {
+      "sha256": "a80d85dc11dd3d4ce3634c4c214586f3850caa6bfff93f0e95e27647a2df25b2",
+      "git_blob": "c0d7f8d489a1973b0af5ed791c14854ab7b2f9bb",
+      "size": 9277,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/assets/README.md": {
+      "sha256": "c7c1d1cf80fbb73e915b3ccde87e0ebe4bab52b9868ecaab2dad22b32347d099",
+      "git_blob": "75bc779720e37a2eb91d77edf83fde53c387f7a9",
+      "size": 833,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/diagrams/README.md": {
+      "sha256": "4aeb594e525db937910849c44f449968b1c059c0bd359eb3b78a445851523d04",
+      "git_blob": "ce5a376ebfb0633636b49c094a5e8b7a74bc1e21",
+      "size": 856,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/06-familyplus/history/CHANGELOG.md": {
+      "sha256": "ace087a141b048f0e5668adc7cf15f2b01cd9c7ff17d12a356151ce917784980",
+      "git_blob": "c11aeed5a0c12b84f68c4c4808d34015ca00bdde",
+      "size": 1849,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/Function_List.md": {
+      "sha256": "3abe6c9ca83dc9ec4625c3679ca494d3cbb0ceaf33f58f3427849c3893e3a0b1",
+      "git_blob": "ee29ab7096d7e4ec21dfdc23a00621eb7d83daae",
+      "size": 5252,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/Import_File.md": {
+      "sha256": "ddcf239e0c54534f062a7a4cc247c87227fb592ae2184522fec86e5c60768bbb",
+      "git_blob": "f3f76846cee925745d98bdae360657ab4e6a2d47",
+      "size": 5464,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/List_Features.md": {
+      "sha256": "889ea98abd9709898650e7a01e89547d4ffcd61c90a2d697023386fd14b2b255",
+      "git_blob": "66f3b91e52d0313c6af710ecdf891d024e296c7c",
+      "size": 3909,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/Overall.md": {
+      "sha256": "9708d76a0aff7423a67d0af5bf206d66f699167cbbdebc0acc0b3e6deba80621",
+      "git_blob": "f833cbc0324f0620599e1ad04e168b6ec431dbee",
+      "size": 11714,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/README.md": {
+      "sha256": "bbcbc6d7e9e4fd98cf0e9f8d9dba0340b681ac6588def2203720a9a115f80ae2",
+      "git_blob": "3f872a5985ffef84da19d4e26a33d65e6c452f9c",
+      "size": 5248,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/Views.md": {
+      "sha256": "7c7db12760655d72ff36a0da56e48f8b9711c9579a03be5a1b9fc82ddf932092",
+      "git_blob": "30d741036614d79c135d462848d912836d01481d",
+      "size": 3361,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/assets/README.md": {
+      "sha256": "a06a4c26b08a9226789b3d5691f7b124b51b7895a46e840b9162ac4726244e3a",
+      "git_blob": "ebfdc88d7aa9b09960c9e16fc1ef17452ff80e90",
+      "size": 870,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/diagrams/README.md": {
+      "sha256": "83fc7f36c09634a454bb2e631bc4ede5563fd0ba38a3ecce6bfd3be6ccacc9bb",
+      "git_blob": "c55c1f427c272bd48740d8fc1ba21da4ae3314d6",
+      "size": 941,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/07-payment_membership/history/CHANGELOG.md": {
+      "sha256": "a308fb9841d0923e1cfbe2e0620b1353cf3b740d3e400bb59fa25b9fba04ade1",
+      "git_blob": "25696e2d86b685200e3973e1bdeeba285f601c3a",
+      "size": 2407,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/Function_List.md": {
+      "sha256": "455463027855314517d6fbf1855b7f9a5dfffa36f0ae287037069c7fea607186",
+      "git_blob": "6dff7042d5bfd74688388412399311d4db89cc45",
+      "size": 11295,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/Import_File.md": {
+      "sha256": "e7f8e3c1445e80294d16810a7c2bb74dcf707df88d8c63223e53ee4f5b67d7d8",
+      "git_blob": "d7435dea4eea145a9831479847e67bde7c041e5e",
+      "size": 5845,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/List_Features.md": {
+      "sha256": "cf82bb1715582e098eb8fa466b43cd8b9157ead7086907a951c0cf9c231cb07b",
+      "git_blob": "9b59cc9bd7377940a4dddc36d846030a6556cc15",
+      "size": 12402,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/Overall.md": {
+      "sha256": "80b8f558b60e4c1e8dc4f9f3d166670a192bee5d13c48e0ffd860a3dac045b52",
+      "git_blob": "97a5a4031032173b92efe848460cd38668dd2922",
+      "size": 12051,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/README.md": {
+      "sha256": "a2912ff82695c947dbebb2c8b5cf48f91e491f081b2616f32298bc440b17e573",
+      "git_blob": "6671270e356dc6cb878e64ee7eddda8134822a2c",
+      "size": 4083,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/Views.md": {
+      "sha256": "2d6f4e07d393a5b5370756e2d45cff2eb5f4c226e4808f8742abd9dc1ad39317",
+      "git_blob": "be352428ac000b31198b26cce8eb8a9b08b049fc",
+      "size": 9386,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/assets/README.md": {
+      "sha256": "ca28d5d6b3b2b39b1eaf8aa6896e747d030d6aa675aec7d078d4508e2fd9115a",
+      "git_blob": "be8546b7deba254e2063bd8943f6b81ba11f8b0f",
+      "size": 849,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/diagrams/README.md": {
+      "sha256": "9c8a9c4181abc110179b6a67c474da724beadf10aa55202cea500b34de7c322b",
+      "git_blob": "7e837004a54a2aa05bb23903d7f51bc0bbe8b1aa",
+      "size": 878,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/08-sale_points/history/CHANGELOG.md": {
+      "sha256": "0091e1e795df91cdd9172e0a88caf2d0505c275ffa8c48b0d6d295e5ac927297",
+      "git_blob": "a49e75387189e8bd6ddc0cfbafdacb6e92447464",
+      "size": 3388,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/Function_List.md": {
+      "sha256": "db59cc5a3ccfa5c23a01c2087b2d8378626feddc2d40768428bd221ab17fef79",
+      "git_blob": "7256853667549719e79454be3f0fa85fbdbaef5a",
+      "size": 11159,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/Implementation_Delta_2026-07-13.md": {
+      "sha256": "7f3cfcc2d27d9531a8297398f269e465c82d3a488208dffd2efb1d6d624764f3",
+      "git_blob": "e225362083d251c1cb2eef910e889bb33113fde1",
+      "size": 3248,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/Import_File.md": {
+      "sha256": "29b6c809e9ecab480290b0f72eadcd1557bc75c024fd0746c0a8f75757866eb0",
+      "git_blob": "b91b118b5d67dcab54ab3fa2397c0f3fe6cf9508",
+      "size": 5877,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/List_Features.md": {
+      "sha256": "673e91490b0e4c249b5ceaf13d5a8d8bed1a2bb508127620e7e3ebf6cf04469a",
+      "git_blob": "c5a717777c9f685a19c5e6b478061e8f3eb20b1d",
+      "size": 12077,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/Overall.md": {
+      "sha256": "17bb6c2c90275064860e9554973458724eae5fee8e0d176a8ddcd437a8858c3c",
+      "git_blob": "0b366ba78693ff4e80a0392b1db1f716adc9d6f4",
+      "size": 9724,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/README.md": {
+      "sha256": "4086a1b8c66bb93a404ff07e41ac3d949c4ab3b9c004c0599b14ab825b72e7c5",
+      "git_blob": "c7f5e031f52ca8fb259dccf41704fd3ae813fdf0",
+      "size": 4843,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/Views.md": {
+      "sha256": "dd34f5323a7a0ba27c64eb655f1469b0e4961ec091757e5cf0a2b2b2c5aacfa6",
+      "git_blob": "251ec7deed132fa38a7a8f5832f86ac16542317e",
+      "size": 9381,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/assets/README.md": {
+      "sha256": "a449f183150df0073221c3bb0a0f04f482258477745c7861b23aae474fdf19fa",
+      "git_blob": "dc67402cb02d1da0ed12f05098f11246525a4489",
+      "size": 851,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/diagrams/README.md": {
+      "sha256": "881f95601129d3334f81e4c5f74774ffc880c83974ba80849c3183d159d63f89",
+      "git_blob": "5f7edbf53e6e678dce09961a2989baf48f75ec55",
+      "size": 875,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/09-admin_operations/history/CHANGELOG.md": {
+      "sha256": "41935b91ce94dff66979624323066f5c2c3dd94bffafc32f35b229f081989300",
+      "git_blob": "76647b09dfa20c1d50c5c9ba436c6ff014d6d8d8",
+      "size": 2919,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/Function_List.md": {
+      "sha256": "451f9bbbb1ba47525f784f2546ec32396839ed600128270b23c2de49ed64a97c",
+      "git_blob": "11bc7705203d379238020a185c5af8d6859cf8f8",
+      "size": 11312,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/Import_File.md": {
+      "sha256": "4ad3bd70249e4bd8528bfd02193620467ad4edb0d2dbff39be5c0e19543cf808",
+      "git_blob": "d3bf4050d215e0568c69ff68f312257d95a0d5c9",
+      "size": 5818,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/List_Features.md": {
+      "sha256": "a0cb1e199ff611f6588f7ccc713f72eec343efb6cdf533cc0dcb1274dc7793af",
+      "git_blob": "1ee9bef0bb28810357cc4b7da0383880ef5b4b3e",
+      "size": 12505,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/Overall.md": {
+      "sha256": "31b7102b2dda60efbe8b21e27424204077e1d98bf7c2cd532f4840875d194aad",
+      "git_blob": "d7b731d9c34557c1d8765f13c7ea4ce39f872f42",
+      "size": 9195,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/README.md": {
+      "sha256": "92100896fa2a84181adf6f7b01031cfb1e4032ddb6e9ee8a7bc5ccee3d8f9b9c",
+      "git_blob": "d0b58196012859aee1c26a667b2ab43938c6cd46",
+      "size": 3430,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/Views.md": {
+      "sha256": "3ebf6b3d566547687f8852fe000b4863ab343fd1ff6e4ce46457281e8ff6e620",
+      "git_blob": "785a5022fa3c7f1f74c5e2d0ce9aaef914f612de",
+      "size": 9640,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/assets/README.md": {
+      "sha256": "a4fb99f8b05376e06500265aae5e659aa583b1a913286f26b82460905a0410ad",
+      "git_blob": "678c82bdf4a81fddc96b0b8c53d7b71637a81cfb",
+      "size": 858,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/diagrams/README.md": {
+      "sha256": "cb2e54ece514f3e8015f6a648fd6d35522d6d2a5614ea04c9d482f53191d9aee",
+      "git_blob": "b7e66339433db3613969844161b03618228fe740",
+      "size": 905,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/10-audit_security/history/CHANGELOG.md": {
+      "sha256": "188157b83d92dc8c3679f2500a28850e3f7f51d21eeecfdcc51d58a5336e28f1",
+      "git_blob": "2fa25212c2b53ff1468fffd36d7865bd946edecf",
+      "size": 2202,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/examples/README.md": {
+      "sha256": "130825cad76080a8ab663b9929c305cabe7b93da4779d4b2152dcca0e4f4cead",
+      "git_blob": "b2a72a66fd2a32e3759583542c90809d85d58172",
+      "size": 1969,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/00-read-first-and-routing.md": {
+      "sha256": "f49c57abd9b0f9d6fdb42bedb9f6898c001d6a2d799515312ba1d5d56a617cf7",
+      "git_blob": "1c3460b7f5c86a26fc69fe005708e570ff4c4ba6",
+      "size": 1622,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/01-input-analysis-and-evidence.md": {
+      "sha256": "df471f41105f2afe3f2cce94d7c54cb05179ee25d6e569490a95f05f6d4bedf5",
+      "git_blob": "aec1b443406d76a5c79a1e1be3d58f67f7bce52b",
+      "size": 1817,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/02-module-scope-actors-data-states.md": {
+      "sha256": "de7c2572135fef36ce224ff43bfec3bb46d4a2caa765b19f97d7217ac8542a66",
+      "git_blob": "101c759c2a0635b6d9eecdae3324ee21b687826c",
+      "size": 1334,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/03-identifiers-and-traceability.md": {
+      "sha256": "5291daa691584b029d437afaf1cff9a5852afe76cc30b462fd515579ae3eb78f",
+      "git_blob": "987eb4ac70b64fb885fdb1553c9a9353cc4ceb8f",
+      "size": 1282,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/04-writing-overall.md": {
+      "sha256": "45ab65b9cc74586ca7527f9eec46dfa95ea8e77dbaa22f82974e574c2f5df3f9",
+      "git_blob": "9b4e88c1150cace20c3100469b5ca5acfc8e036f",
+      "size": 1076,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/05-writing-features.md": {
+      "sha256": "d8e20fc49ae9d03d26ec2debb59da5413594162ad326e6fe91e9827ac586756a",
+      "git_blob": "c8013c32ad588f4f7124a415b7a4ddacb44a4a20",
+      "size": 994,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/06-writing-functions-and-contracts.md": {
+      "sha256": "100663017ddcbdd2bd8ea7426feee5b0f20211e895ec65905ec5c57834b1be86",
+      "git_blob": "80097ec0bd161791dd04f20f31e0c72066e81f0b",
+      "size": 1192,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/07-writing-views-and-ui-states.md": {
+      "sha256": "a3224059be55adb2aed6616d59be3bc40fe349900c1239b930239194a5bdce3b",
+      "git_blob": "faea170ae5466f3aadfc4c75fe55598293b4d102",
+      "size": 854,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/08-writing-imports-diagrams-assets.md": {
+      "sha256": "6217407eaf9975a4d32a3ddcaff47a915291cf8c2e1191e06b98352b60caea13",
+      "git_blob": "5efb9f049da6b542e210288a562fc74b894af0fa",
+      "size": 1263,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/09-review-gates-and-status.md": {
+      "sha256": "47fa26f8d262fcd4cc4ce55c5f131547dd4fe9a5254f541ad9135d9579d722ae",
+      "git_blob": "aa606dd0aad146b994b5951e2e8624eea9cf13d0",
+      "size": 1265,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/10-change-control-worklog.md": {
+      "sha256": "cdb46ae0f1e0cdeb51e6ae99694acb09237fe8f9ba83aacd6557eb1999e688e7",
+      "git_blob": "8ccb2d234aa65ab3bc618171af698ab11f6bb34e",
+      "size": 700,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/11-nanobio-source-truth-and-constraints.md": {
+      "sha256": "59ea396036d2ad9f3b133afe31dc589580a0b4587e9073c1b9df9e97710cefe5",
+      "git_blob": "8b4f5fbfb7a2541bb7fe62c93f401113f4592d6a",
+      "size": 1188,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/12-agent-runbook.md": {
+      "sha256": "34f04e9141f2d6f7a3cb1c536c44b1ad5d2415eef5895d100b51e9bc27f25296",
+      "git_blob": "2f5a8ea9158afbd7e41e9fc7aa4c69e4759d8fc1",
+      "size": 1258,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/references/INDEX.md": {
+      "sha256": "5580b1c263dc3bc17f2f7b5638d4dfef2d6d7bc32b2d615000ea572c62a84d7c",
+      "git_blob": "767ec8812a3ac7a9d9af5717e5a01ca1df34a985",
+      "size": 2518,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/scripts/validate_dd_pack.py": {
+      "sha256": "30038fe0e73e3dea0d64f2e4d7988801eaaad04aed1bf1e43dadc218b4cf91ed",
+      "git_blob": "0d6c1238d069b3da68df6cd0a894b44e4d674221",
+      "size": 8405,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/Function_List.md": {
+      "sha256": "5a591e7c4c2b14a4fcd25ba18c38b83c92b6dc9d0ed713c7c39117d9f442eda7",
+      "git_blob": "0c95e9701319355a3af63c0cc073b7249b319b48",
+      "size": 7400,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/Import_File.md": {
+      "sha256": "34e4c56f954b855fc5c133b4dae1a5ef759fedde4a4b98e3274caac8c6c3cf3b",
+      "git_blob": "8bcce04cb9855a6405d6b751cb996ce021caf9b4",
+      "size": 6643,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/List_Features.md": {
+      "sha256": "1c98f0c9179016b944a0b141b19b315cc08f2d6208c182d7a076d71c1ac3bc49",
+      "git_blob": "c392d77bda7ae9b729810bdbba86ac19eba11faf",
+      "size": 5919,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/Overall.md": {
+      "sha256": "96356389d0508482c42c2a7ce11bcb2651c0f0af1172a3e56abce345fa3aa138",
+      "git_blob": "1440a0a7711a7311ce73faeab771737d834ba122",
+      "size": 9787,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/README.md": {
+      "sha256": "ac3b06d009f996524fe365b848cfcbb5d112a3f2dc0eeb23a92a4d42ba6dc70b",
+      "git_blob": "d2ee2ea900ba00c9dcde15a2c58c4ba4865e9179",
+      "size": 3656,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/Views.md": {
+      "sha256": "ea4f16c0129f0312a66c72124a9696f01c8278a296b4590799e658377941d915",
+      "git_blob": "45b3ac554f1ad54de1d06130370bf7d6943fdb24",
+      "size": 6612,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/assets/README.md": {
+      "sha256": "ef1fe3a40b7b1b148a7ad7d674b35549ecff7097cd3345098b96ad60162e31bc",
+      "git_blob": "e74d6a93e45eef0a19c08036f3030d6fed4460b7",
+      "size": 333,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/diagrams/README.md": {
+      "sha256": "842b78760fb2af86750135ac08fd0374ed770f720aa5fd97900bc88d58aeaee7",
+      "git_blob": "fbffb308b6e7190db266eafb9bfa99b8852694f2",
+      "size": 567,
+      "origin": "Study2Work.zip"
+    },
+    "create-dd-mobile/template/history/README.md": {
+      "sha256": "b1bb7b202eaead38e4a8501f0687a9463abb2cb47a2f3e283edd1af58f241728",
+      "git_blob": "304ca71e4299c49d05e7d842a265ba8bcddbebb2",
+      "size": 229,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/00_Cover.md": {
+      "sha256": "fd5f568c5329d3069fbaff617a6f4ed3b5ffaf050e042c95b7c9100a05f79e63",
+      "git_blob": "d7f246ceff526c56e3116f8fe6fa108d3fce17fd",
+      "size": 1849,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/01_Lich_su.md": {
+      "sha256": "d1cec6573433a9551812bf47552f8a44d7c533d790341941047c410e1d57771e",
+      "git_blob": "353011eec05ce89524b8209003d3eacc5325a949",
+      "size": 1568,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/02_Overview.md": {
+      "sha256": "c2879c2f0e007395558dfee4167484786c5aadb3fdd63ab135ca111e7c5f8aa6",
+      "git_blob": "c15e1fe836a313ee1d050096ded9530d029851dc",
+      "size": 1521,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/03_Request.md": {
+      "sha256": "37aaa1e9d7f3e83329e81ab38d922c9dff959284d5b7b3ae353878798dd4b7aa",
+      "git_blob": "0accaa03ae9799bdd17de24ec8c240ee08bcf435",
+      "size": 4830,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/04_Response.md": {
+      "sha256": "5bcb43ba5eb487302dd5d5efde4383b9f452f9fed2149f55315d64ff78a19ab8",
+      "git_blob": "66406ab6979e1fad923fe3cb8dae370c350956b8",
+      "size": 4118,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/05_Data_Mapping.md": {
+      "sha256": "11bc77bc0522d3af27b9499114991c8819046ac32bde5c1efdc841be088dcc5b",
+      "git_blob": "98101c2a1be4205a7180fe7a84798c62835d6eac",
+      "size": 4996,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/06_Error.md": {
+      "sha256": "e0160ea07fdbc74f2cafebd6ed3b21e60029662d28d67f5f6a0b4d95ba72be9b",
+      "git_blob": "f94e8d8de7caff830675870a550aff298173a4de",
+      "size": 2592,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/DD_API_Template_MD/07_table.md": {
+      "sha256": "4c9a0e037872333210aaf44ba9fbf00a0e63343a69d55250e537d2c3c5e2d356",
+      "git_blob": "37721a3aa5ac2d6cae06e3d1dec183cbd64a4b42",
+      "size": 2663,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/00_Cover.md": {
+      "sha256": "411f47585f8fd7b177012d1b242ed1ef5d7f15eb21467d4ee42a7e4a071c3f29",
+      "git_blob": "bbff645a21690d0260a7f4994b77544677924575",
+      "size": 2143,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/01_Lich_su_thay_doi.md": {
+      "sha256": "2999787e5a65753daedbc60b5f88c199ec8ff7369b6b18d9ef5b52bb2a9df310",
+      "git_blob": "414be421ed383f51ba40ebd35737f229952ca1dd",
+      "size": 1726,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/02_Overview.md": {
+      "sha256": "b6257608e1a788f0fa8cde8a50b859b15db596e63a82899821953f50ad619aaa",
+      "git_blob": "405f12179bc4c8e94f2cca189193ddeb0e604453",
+      "size": 1834,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/03_Request.md": {
+      "sha256": "ad323f1d6ecc2955fa737cacce550912988c45bbb8c0d77b71172f36bb6e327f",
+      "git_blob": "2b6a7bf1b36b31cd8414bccb1b826a99de0f6115",
+      "size": 3509,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/04_Response.md": {
+      "sha256": "ee584bc0e423726f5dc37271c0e444e595b2ba14d95f77c149e911fc69434a13",
+      "git_blob": "2b2b780e471735b7e57f5a1af1a330195a944db4",
+      "size": 5913,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/05_Data_Mapping.md": {
+      "sha256": "cea128cd644c21d711d2b55295d380499e982eabddbdf8f343068604fa7278da",
+      "git_blob": "7558f5d775808d4a3c6b792cb06c6a073dd349bf",
+      "size": 8821,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/06_Error.md": {
+      "sha256": "320c80e4a7fdb8ecbcb9644ba198b37df7b0d34cae1541327ff7944d1d5b4789",
+      "git_blob": "d5c71a885a162dc9f9ed45f48cfcd9edcdb52033",
+      "size": 2591,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/07_K00-01.md": {
+      "sha256": "44c6553c312064997d858a8f2c38bb47d64d7250f7d8f1eb96e0a6b73641f898",
+      "git_blob": "04e778dea33253569fe254964a711125fc7428a8",
+      "size": 997,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/08_K01-01.md": {
+      "sha256": "ed33a6ea261788518066e7e2bae4533e50c2fdb8eb156d87b307ebe99a0fd525",
+      "git_blob": "f99b588531eb143ce733370ae00ed7e7987d3d74",
+      "size": 3951,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/09_K01-02.md": {
+      "sha256": "898296e0c2e99dd94c1081b051b74e8023d598f0645e66d90bc5fa3256079bf6",
+      "git_blob": "eef4096ea9c8afdd11c232b5449737de45766c6f",
+      "size": 2064,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/10_K01-03.md": {
+      "sha256": "9e1e633fd4a16f9d12f26a50e0c833ec992074ccc9bb0f942bd21cdeffca94f6",
+      "git_blob": "c9778a2b0308c85343d80039bee4095914bcff96",
+      "size": 5618,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/11_K01-04.md": {
+      "sha256": "7eb33fdf1945dfc6e95d000b2ada5588679a41290db382659b283e7a8a312614",
+      "git_blob": "80b854aaadd02a33d10cfc60352cdbaf3026b739",
+      "size": 1204,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/12_K01-05.md": {
+      "sha256": "f99d11cf6511e341c0ca3183f244acfdd64884b4473dc00a2196cc763f8227ce",
+      "git_blob": "91bbc750bebdef5657fb812175606513799af789",
+      "size": 3952,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/13_K01-06.md": {
+      "sha256": "f77db6c9275e256fd6e1f4456280f379390eb487cc68998163619a791e973e52",
+      "git_blob": "e53881660f9c5620e4f93d530c590e20e91cef10",
+      "size": 2509,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/14_K02-01.md": {
+      "sha256": "7b5f9d42219888c3b3e741b0a12383c32f83f83aedfcebd054744a6d945be513",
+      "git_blob": "6ad89c50e4893925e6a2463646d9bd9248cf8df8",
+      "size": 3286,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/15_K02-02.md": {
+      "sha256": "924eae8900a5b96515dd3f6f72bbada9ba7e944d1fdeeede5ab7b20617968217",
+      "git_blob": "4f6125912f1f044d8ba2bfc85288034e2ad97b40",
+      "size": 1101,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/HOKAN_K00GetLabelInfo/16_Error_Message.md": {
+      "sha256": "ad2fb24e6720f583cffe0766f398737cbda6c09a7f5f0142914afe71c4cb367e",
+      "git_blob": "40e438010176caab5b23ca35b20ad99438c96f7d",
+      "size": 1842,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/00_Cover.md": {
+      "sha256": "c8d7d61a49b06c151619f26f1893372fb751752d3fad5f52fdf931a61ed253fd",
+      "git_blob": "6334774953158b5eec347a88197d312de0d025d4",
+      "size": 2176,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/01_Lich_su.md": {
+      "sha256": "631ae5df1ee909ff39868ea4335f006564a7afe0d64bfea39cdffc8684c02518",
+      "git_blob": "789a0e9e93a94d93d1473c69cb9531f2941e0691",
+      "size": 1887,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/02_Overview.md": {
+      "sha256": "8b62a6399b48ecf3b592705568b95bb942d14229d4487a930c65ce26449b9820",
+      "git_blob": "b40b305fdbd73d620e2e3c1c8441263e98822d4f",
+      "size": 1866,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/03_Request.md": {
+      "sha256": "81fd00d22813a8933278f72f671fb3d34dc51cdfd72955c207807398b315220c",
+      "git_blob": "3887bb8b6d70852c7c4700a21f10fa9a58c824a8",
+      "size": 7128,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/04_Response.md": {
+      "sha256": "7d6946f01391f8ba9fda6264c6a5c1c42d2f8875642d0f899c34e1719c9b37f1",
+      "git_blob": "025838e4de9a862651f6220b604261c7a055ce17",
+      "size": 5221,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/05_Data_Mapping.md": {
+      "sha256": "25f61e9419998ac78e3b3009971759aa8d3b984faae815e5a53c04400632753b",
+      "git_blob": "771380c49bf34ce8fb49a9c58104d41f35f0041e",
+      "size": 32924,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/06_Error.md": {
+      "sha256": "19f06eb21ddf408e6ec68576522cc09dec513612d9691235a6e5da5796391f34",
+      "git_blob": "06686946e8d31860eef62ef9d0d4b85640808ccd",
+      "size": 11039,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/07_setting_removal_parts_update.md": {
+      "sha256": "fb74556f327dd16ab8c782e6fb6b32a538db16af7aacfb460e74bf1068da861e",
+      "git_blob": "deccb2c311f5c19c7572f9e367e055c5d7c528cb",
+      "size": 6215,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/08_setting_removal_parts_upd_hyjjn.md": {
+      "sha256": "b8879e07140e75903cc3f44f9e91ed39258368495bed85f1bb3a174fb484fa59",
+      "git_blob": "c4d97cdcd2e712a7693eeb1cd23b1ab91bb98b10",
+      "size": 6259,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/09_setting_removal_parts_insert.md": {
+      "sha256": "4c15284b6d443b80b644b0b25611e9ef995f4aede87cd44672e0068f46998be4",
+      "git_blob": "59f4dd8d4fb9c9ae974edb915aa1e11988bbedd9",
+      "size": 6153,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/Examples/VQ2T_PARAM_I01SaveRemovalPart/10_setting_removal_parts_sb.md": {
+      "sha256": "8e47f82017fc273a00b57bde067d7c3f33d81c2c54488f6e14a0b02bb206e8d1",
+      "git_blob": "7da6a077363cba03e7b2795beeae999e4110d8a1",
+      "size": 3143,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_api/docs/dd/createDD_MARKDOWN_SKILL.md": {
+      "sha256": "2113d1020877fd24772780b4335028ee91a7fd061539183882ba26ed01665ab7",
+      "git_blob": "3e5c93f7140b68e19e7944fb4e0e2c7ab0819770",
+      "size": 54310,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/00-GUIDES/01-quick-start.md": {
+      "sha256": "6962d8a6aba3d0bcf541a9c2ec4d6f4c22819a592a39ff2566df61d5803aa578",
+      "git_blob": "bd162c704f08e7e1500a87b6612b3bbc8787a1ea",
+      "size": 1223,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/00-GUIDES/02-create-new-screen.md": {
+      "sha256": "9cd1293b7cd7386a3595c5bebd4142553d2be4c79a4ca88c6a6531e90ee90385",
+      "git_blob": "b71ceef605c344a3b004285b467d3391b6ba8d67",
+      "size": 5445,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/00-GUIDES/03-dd-conventions.md": {
+      "sha256": "0bbe7e0141edcd7210c966de5a2813ef428b87c8d8645a54e1113661224d5dda",
+      "git_blob": "d5b204edab6465f27dcd6e32b8a651f3e27b4488",
+      "size": 3560,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/00-GUIDES/04-review-checklist.md": {
+      "sha256": "205f3c3e7a1935b42e8a18b065e89ff6ce6f672c100a43c376da10d7186b41c7",
+      "git_blob": "1adfcdde74d3ea4cdad6c510bee747455194ba82",
+      "size": 1822,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/00-GUIDES/05-ai-agent-prompt.md": {
+      "sha256": "6a7ec43e29f9d083bf3cf10d57ae3854e9bd6fed9244cfe48afc95368e16bc07",
+      "git_blob": "2798c364a0bba550ad4d69a8a850b56712726140",
+      "size": 1939,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/00-overview.md": {
+      "sha256": "4f92edabdbd24a0732c2294af144d1e19abc7f12b9b3132e735517431ea1a241",
+      "git_blob": "c042ce8e90c7bd7392ff69b099ef5c69360c71cd",
+      "size": 1372,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/01-ui-elements.md": {
+      "sha256": "b7a69846b128ef85c547c2e89e97f7211545f0bbffa03066c4535bc5fb3e6fa5",
+      "git_blob": "df229da80e5518973a30cc05ea54c2d04efdf2fa",
+      "size": 1218,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/02-events.md": {
+      "sha256": "facb7dbc852fcdfed95d709404a75d1f5038846d6654cf5d08fc4153cb7e695c",
+      "git_blob": "3e180d0d5f9f3a16b84975137b6683fd5c301287",
+      "size": 1312,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/03-data-flow.md": {
+      "sha256": "4cedbaffe64ad7f606274e6ecb6a7046889a2bba40704436dfd64e6f7c2a87e4",
+      "git_blob": "5da91fd58013a373a119f287a766a6f21c3d7297",
+      "size": 1085,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/04-api-integration.md": {
+      "sha256": "323791f755e921ba4a2efaaf3551fa9b0c13fc5250aaac2046c66a34b5525da7",
+      "git_blob": "16e17b7c0723bf22107e1f73731d8f134841f7fa",
+      "size": 1251,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/05-business-rules.md": {
+      "sha256": "f794614c9c4dbb73cd2cc6ddf24c483c99540feb9eeaf3e999de00a70e2b6baf",
+      "git_blob": "2a0f5f6ea04150acd61437b74eea547fe0d90870",
+      "size": 677,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/06-navigation.md": {
+      "sha256": "ccd1c4dbf96a1880e30091c8f995db269791d4c5fe2791881cbb883c5d6e12ce",
+      "git_blob": "e8da06a41de71715fbda289fcb6943c7f24c77e5",
+      "size": 905,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/07-test-cases.md": {
+      "sha256": "c95f504a2e12464fb940fc32c20d37536143b8ad531d73a957d645aa40effa47",
+      "git_blob": "ee2ac932e2d68511dd75887a639cf472baed182f",
+      "size": 940,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/01-TEMPLATES/SCREEN_ID/images/README.md": {
+      "sha256": "9797ee54a44d9eca85ac4a727d18f5150cde0799c4581180c1f38baa5f93de4a",
+      "git_blob": "b7502524990751cbf887113f9e147b9773782296",
+      "size": 318,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/00-overview.md": {
+      "sha256": "d732a993f564ffe6f93d37f3c94e6b023c2b131070d672420b54d6704943ed7b",
+      "git_blob": "a8f6047c63e3a524ca8b976865f245f97bfa7a35",
+      "size": 2617,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/01-ui-elements.md": {
+      "sha256": "ec70499c5c4079af5a74fedd73dd3974148daa78adfec72070ba896756d411d0",
+      "git_blob": "fedf1b0021476e79cb5dd53ad2b19ab64d706fff",
+      "size": 3846,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/02-events.md": {
+      "sha256": "5cdd17fabfca595792e0b55cd754e33339eda98933592987ee3eafbd4b4dff5d",
+      "git_blob": "c6e8b37ed6080019c02967c4077df3b363ba7c1c",
+      "size": 4350,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/03-data-flow.md": {
+      "sha256": "7b80743ef3587669bf2577a20cca61f62cc7ecb29498e6253fdd9d94930bf260",
+      "git_blob": "86765322c8774465416143d953d65586dbb52f1f",
+      "size": 2597,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/04-api-integration.md": {
+      "sha256": "433d5a3aaf4a9e9970335e78c22c4a5f63359d6959bbde160fccadf8b87044f8",
+      "git_blob": "3c9fe1e0a2f8145f405e4fcf20a5ed622672283e",
+      "size": 2344,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/05-business-rules.md": {
+      "sha256": "5ba2ce4f61b4f79b46f2a188cc8dab4d053da1c48b5ceb40560826e70685ab75",
+      "git_blob": "46bd7b35391d5c4f4f924585f63b825974ad3f0c",
+      "size": 1944,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/06-navigation.md": {
+      "sha256": "7df2dc8b26d06b703efe5e8e8b2a870bb878a75c49fa3c745517d858bb41148a",
+      "git_blob": "009872e59120fc71e6576c07e489dfc10c09925f",
+      "size": 1079,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/07-test-cases.md": {
+      "sha256": "22780eb87b932503fb4f44c7e1253f7a3a70bf42c8d4a4d3347efc158bb89fde",
+      "git_blob": "46f7e9afc3853c364f7423dedff04ddb42366777",
+      "size": 1922,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/images/screen-clean.png": {
+      "sha256": "4712e26f470333b3fe2ac9ce67992067be831ac429f466fa5192f69c7acd3b05",
+      "git_blob": "5043e1cdd081155a0495b75228255d8e71121397",
+      "size": 51035,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-01-CourseList/images/screen-numbered.png": {
+      "sha256": "1830668e4d479de440679d83823c8534308192454fd06c234d0395259a2bb292",
+      "git_blob": "54983c647eff8e5e5433d0eaf1a68ef501b97319",
+      "size": 56827,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/00-overview.md": {
+      "sha256": "dc55c30d4ee6d8729bef901b7536aaac39d45e37a8560e4465212f0a4da197ef",
+      "git_blob": "ac1a6ef1f979b8418eb803d56999fddf2cdc2e16",
+      "size": 2531,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/01-ui-elements.md": {
+      "sha256": "fd30a9afff676423280a2860a39ca223e89382954f413bd2ad5cc4a7db3e5094",
+      "git_blob": "5b32eef32a2b267fa9cdf100502f87e6c569103e",
+      "size": 2834,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/02-events.md": {
+      "sha256": "252b818a1bd1fa502afeff1edd3047cb8eb093ffd689838d7faf1c0a2d5adf82",
+      "git_blob": "c3606483359eba8deb7e4b9c196cb231b38cc47f",
+      "size": 3794,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/03-data-flow.md": {
+      "sha256": "caa8d92c2be8ce3015483e2185d16da42a873809123467848ab3d447561f5fcc",
+      "git_blob": "3d06ec30ac75db7582c66b8c5037b1eb6c092829",
+      "size": 2821,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/04-api-integration.md": {
+      "sha256": "440d27b709f6efff70577f0db1e935b92bfbbca1315399ef7a8c0960f039c43d",
+      "git_blob": "e769887e63875312e3999defc33f029924324387",
+      "size": 2778,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/05-business-rules.md": {
+      "sha256": "9505197bc4718f43881bc2ea2096dc4ee6e6b1f813d80005c0dc160b40f34f13",
+      "git_blob": "510685f888d98f0a90713cb09975041393365550",
+      "size": 1777,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/06-navigation.md": {
+      "sha256": "dc605936dd3afd39e882bfc682ac907c8a1c7c43b0fd688af4b74dd03983eb7f",
+      "git_blob": "d01363406cd35399255c74e37be8a08bb5a538fd",
+      "size": 1397,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/07-test-cases.md": {
+      "sha256": "cf09227adfff15fe152a9ad2020b1c3f4f16574c5ce1ed220fda21601680319b",
+      "git_blob": "7046d2808317e32ad26b50ff2ca09704494c594f",
+      "size": 2094,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/images/screen-clean.png": {
+      "sha256": "9ceb8e5a144cec6b32d146500850d2c2d9c05b6d02c94a1c0beb1959606895d8",
+      "git_blob": "4cba38707103a60e8ac081860de8252e54024444",
+      "size": 53291,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/SH-02-CourseDetail/images/screen-numbered.png": {
+      "sha256": "3c190041c9fa4ac7dfd276e3316a5b11bc0cd60e098c79e12c81f388e82c9223",
+      "git_blob": "ad0b5f44b28dd45579ac6cca1cf0d8fcc0e1c76d",
+      "size": 60796,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/02-EXAMPLES/screen-index.md": {
+      "sha256": "fb01049ff122efbe3cd3cccd39c3a4bed1eedd9fb7cde5c9169d70bc4000f046",
+      "git_blob": "54ecfbe6d3ee9673e393d2fc45d06ee18723cf22",
+      "size": 816,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/03-TOOLS/create_screen.py": {
+      "sha256": "c61f76a818a7f14831ddbeb06fdc267ef8e5985188b1f8dd3275868fc47960f3",
+      "git_blob": "9efc1eb7eb34f7680092d2b6c42893c0718c5921",
+      "size": 1961,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/03-TOOLS/validate_dd.py": {
+      "sha256": "eeec36a8a79a923c8e906e6b4b09a54765ab3c3dad1e3294ae54fddb2cb2a9eb",
+      "git_blob": "24b17e016c1e0bb142b5934a1b1cd741639eb3a1",
+      "size": 3068,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/MANIFEST.md": {
+      "sha256": "ab0cdb44a87d7c561a984e224e0f6d4b30c0f6d0151bd82427a0a069e7a673ed",
+      "git_blob": "b3e66485dac65dc3776e698b144019f09543f9bb",
+      "size": 1862,
+      "origin": "Study2Work.zip"
+    },
+    "create_dd_screen/README.md": {
+      "sha256": "076119ff52580f1b50dba22e62e69b903ce16b2cbbb7cd8a6007b5a5372e3e8f",
+      "git_blob": "53f7cd0cfaed90179abc9bf61bb01802e75722f6",
+      "size": 3912,
+      "origin": "Study2Work.zip"
+    },
+    "utc-screen-skill/MANIFEST_SHA256.json": {
+      "sha256": "4f500142b2562fd05b3795482020f3410be3c9549acaffd04e3ff90229da9401",
+      "git_blob": "75f772344f0bd7c20de784a27553bf380086249d",
+      "size": 4881,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/README.md": {
+      "sha256": "3a8624bfc7d71f644943eef3d6b87f4672e3ad99379a7a6e26b998b2eea253a9",
+      "git_blob": "d607d5040984c71436a93ed679c64ea5a5b65d20",
+      "size": 4621,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/SKILL.md": {
+      "sha256": "5c8fc589a94d02d1ece200f74cd982e1aa09f0fc2cf52369935187cfd4b4f805",
+      "git_blob": "e3f33e0c58c9b43c9988b9405bb97184129ffbb9",
+      "size": 8407,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/bao-cao/GS01_Doi_chieu_DD.md": {
+      "sha256": "3f32af79411514601e1a12f52ad0104a805ab3b6c4b4004f2eeb1d112f4be86c",
+      "git_blob": "a64fde2d842fec8888d7868e66bfb1a55fb36ead",
+      "size": 2358,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/bao-cao/kiem-tra-gs01.json": {
+      "sha256": "0428ef2cd3a1d1563b7d6f7d691e94ca1680dd559fb4bd249fa187410a6bd909",
+      "git_blob": "8d98e665f24a606b5a07c110dff4c936a515ccc6",
+      "size": 448,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/huong-dan/01_Quy_trinh_12_buoc.md": {
+      "sha256": "5260aed71e2f6448238fb0aaec8cc4217fdf49a9a91a7e08e98d4775bd8e334b",
+      "git_blob": "6186b99512445b7df556a883b6f8e9c4e5c8b71a",
+      "size": 9210,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/huong-dan/02_Quy_tac_sinh_ca.md": {
+      "sha256": "53b5bc2adbc0b643ce27602672d3fd0654f66f73175e5599b38e3548c40da264",
+      "git_blob": "6d7a3e2b1a9ec7351bda689a6e95db1513f25abf",
+      "size": 4992,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/huong-dan/03_Anh_xa_Excel_JSON.md": {
+      "sha256": "0e8cc48ec2412fe3ce278da360b014474e0d9a1d7f906e81e4fadab41d91527d",
+      "git_blob": "255931602ca3946912c01c0beccc97223edb06cc",
+      "size": 4327,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/huong-dan/04_Mau_lenh_giao_viec_cho_AI.md": {
+      "sha256": "2bd5804d1fde90178e5f77e27952468e9d8c58689ad8941dbe2908e0e68bcf13",
+      "git_blob": "cb055569aac1bf9475aaad6279052b5ab7c3a506",
+      "size": 2293,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/mau/Mau_UTC_Screen.xlsx": {
+      "sha256": "c398842dc68733670f88de2e1ecd107268a53efbc8fcf4f0146170c998b2db31",
+      "git_blob": "4aedc6e236b33a7c24a946806f2d92f3a92c9c95",
+      "size": 68312,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/schema/utc-spec.schema.json": {
+      "sha256": "d2f2f00e9c9e2129dc448916ee3d01ca48d67277751e80455fc99b18d69307ca",
+      "git_blob": "3c7210d297afca4653d8a4e48e7fca8e4386159c",
+      "size": 5895,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/scripts/chuan_bi_dd.py": {
+      "sha256": "1671863609e7f51a33794eda1bf09874eb7e9031df235d180d6372bbebad7e46",
+      "git_blob": "185e0032c16b53f6bc39c0202b945f4682796d96",
+      "size": 3092,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/scripts/kiem_tra_excel.py": {
+      "sha256": "38a79fc4553c2a5a2cc6d3f5c998b96ef9893afca25cdac19d6eb9fbc7cefbc8",
+      "git_blob": "8b4cce8352d74e2403be9198930b5473ca09db8f",
+      "size": 1757,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/scripts/kiem_tra_utc.py": {
+      "sha256": "d6409230f3d9a9d89b3f16ee896f68b929df79ade0ffcabc8ffe2cd14350baa4",
+      "git_blob": "dee1aa50725235c20212cdadfe2a318c43901891",
+      "size": 5861,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/scripts/tao_utc.py": {
+      "sha256": "d267017586e52a97428bbb4f3caf12aa77f3d2b19a02d7e7833a1807a686cb6c",
+      "git_blob": "0970dc6d53af1c350584392110ecffd534a7e7ef",
+      "size": 21050,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/tham-chieu/Nguon_quoc_te.md": {
+      "sha256": "40e61939efe9134173e1f83ce04825187061150f038be75a912f5c214b23d8cc",
+      "git_blob": "abdc852ea7999d25f15a1073898b476dd8d95fbf",
+      "size": 2005,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/00-overview.md": {
+      "sha256": "7145a41915ea97a44bee68ab451bdb7e4ceb61ced03a649545fa6f439335ac17",
+      "git_blob": "c3f82e6f7119a3f5a8ae648aa7bc7361626292ab",
+      "size": 9677,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/01-ui-elements.md": {
+      "sha256": "b202a4cfc236875954b3d3eb9d1df0d0fa2de1260deb98f7ba38a804d53934cf",
+      "git_blob": "6153dab12ccbccdb233a51eb51ae43b77739d85a",
+      "size": 6527,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/02-events.md": {
+      "sha256": "859f983d991da2e3761d241d4b66dc46eafa1a981ade4bc1e0088a4f78f1add2",
+      "git_blob": "374567dd0d31958dc098771a04494ff0e965bee4",
+      "size": 15382,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/03-data-flow.md": {
+      "sha256": "82907542d52b95dafda7ad4b4428a687551e8fbaf7111313ff1b4beb10baf8f4",
+      "git_blob": "f8798381df8eaaa50c0258b165245c539ef0c17a",
+      "size": 20925,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/04-api-integration.md": {
+      "sha256": "a3cf06c2ad4e7f4a74afaafc48a11883a8cedf73d6263ae111a3167e83084543",
+      "git_blob": "4c233fd79d118b663e04aedd5375a13af82a1635",
+      "size": 5238,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/05-business-rules.md": {
+      "sha256": "6d1eeb0eaf1a85610b224f2055a44c72f6d1cb531a168f967218ae3f87d2f860",
+      "git_blob": "0dc20dc8285b0f5c017c2a173c0ab1903dabce88",
+      "size": 4388,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/06-navigation.md": {
+      "sha256": "a34b80e2a08366da4a5f6d98d5bc6d462f49ffb3950f7c5e47f596ba71ccee4d",
+      "git_blob": "6ed4c41cd1b367b1be062dfe6408c39266c2416a",
+      "size": 5203,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/07-test-cases.md": {
+      "sha256": "455241635af4a8fcba95a79c90cecbe82725840c1cc519d9b4208c2e30350a06",
+      "git_blob": "20e7f398631f6c83445f02415ee1535f73df1480",
+      "size": 5402,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/code.html": {
+      "sha256": "d354d54db1ff21f8df8dd71fbf57c4836e751a0b021d76461d0c855968038fe5",
+      "git_blob": "d0a65cb334f3208d37f57fa7f78680d4b3078696",
+      "size": 12693,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/images/README.md": {
+      "sha256": "498ab634d678da8fffa8f53de0b759b75cd803630f2e8301e17c045227bab1a7",
+      "git_blob": "d4f739eb9eeec4f672fbbb6be54be864abbdf70c",
+      "size": 455,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/images/screen-clean.png": {
+      "sha256": "3ad9b03ef8862cc09e8879c3009318b097a6d7217b86f9144201ef10bb6251c7",
+      "git_blob": "bf14e7233751ce296eb60627feae74437e044d72",
+      "size": 166916,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/DD_goc/images/screen-numbered.png": {
+      "sha256": "105ea5777856da023f67a87c49b8da65b905cc3bedfcd5f5e0cd9707ff40ad37",
+      "git_blob": "737e4f8d671452b986d9dc39e3573de65b595c1b",
+      "size": 184946,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/UTC_GS-01_DanhSachKhoaHoc_KeHoach.xlsx": {
+      "sha256": "adf6e90c444e81d787381d95ecf6b5b24a9bc4559e4e4d44e7ceafdf57d86aa6",
+      "git_blob": "4ed7e1cfb8b1af641476aa790ef75301f9e5caf3",
+      "size": 87319,
+      "origin": "V9.2 / Git blob đã ghim"
+    },
+    "utc-screen-skill/vi-du/GS-01/utc-gs01.json": {
+      "sha256": "e9c4fc270e6b238a379de1b0b02267fa4da90fa18a5b638999901385e3b6985e",
+      "git_blob": "995497c2136dc4fb562742178d8a933e2c8f1941",
+      "size": 91317,
+      "origin": "V9.2 / Git blob đã ghim"
+    }
+  },
+  "routing": {
+    "dd-api": "create_dd_api/docs/dd/createDD_MARKDOWN_SKILL.md",
+    "dd-screen": "create_dd_screen/README.md",
+    "utc-screen": "utc-screen-skill/SKILL.md",
+    "review": "code-review/SKILL.md",
+    "architecture-review": "code-review/SKILL.md",
+    "dd-module-mobile": "create-dd-mobile/SKILL.md"
+  }
+}

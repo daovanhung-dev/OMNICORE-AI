@@ -1,0 +1,2 @@
+# Quy trình thay đổi lược đồ
+Xác minh DB đích, phiên bản schema, chủ sở hữu, migration trước đó và hợp đồng. Lập kế hoạch thay đổi, tương thích ngược, khóa, backfill, kiểm chứng và phục hồi. Kiểm thử migration trên DB cô lập có dữ liệu mẫu; kiểm tra dữ liệu trước/sau, quyền, ràng buộc và rollback thực sự nếu an toàn. Không tự chạy trên production hoặc DB dùng chung. Ghi lệnh, kết quả, rủi ro và quyết định đã duyệt; cập nhật DD, contract và context.

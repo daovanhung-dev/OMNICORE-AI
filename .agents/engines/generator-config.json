@@ -1,0 +1,8 @@
+{
+  "backend": "fastapi",
+  "database": "sqlite",
+  "frontend": "typescript",
+  "authentication": "optional-jwt",
+  "cache": "memory-ttl",
+  "agent": true
+}

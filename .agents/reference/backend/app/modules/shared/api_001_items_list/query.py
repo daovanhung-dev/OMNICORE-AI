@@ -1,0 +1,2 @@
+COUNT_ITEMS = "SELECT COUNT(*) FROM items"
+LIST_ITEMS = "SELECT id, name FROM items ORDER BY id LIMIT ? OFFSET ?"

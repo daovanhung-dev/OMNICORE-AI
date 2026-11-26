@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "6.0.0",
+  "mode": "TEMPLATE_ONLY",
+  "exampleOnly": {
+    "server": "apps/server",
+    "client": "apps/client",
+    "api": "apps/server/app/modules/module1/api01",
+    "screen": "apps/client/src/app/features/module1/screen01"
+  },
+  "countsAreConstraints": false,
+  "examples": {
+    "apis": 1,
+    "screens": 1
+  },
+  "actualProject": {
+    "discovery": "workflows/tools/build-context.py",
+    "output": "project/tree/",
+    "preserveSourcePaths": true,
+    "frameworkAgnostic": true,
+    "neverCreateSourceToMatchTemplate": true
+  },
+  "naming": {
+    "python": "view.py → view.md",
+    "other": "page.ts → page.ts.md",
+    "markdown": "README.md → README.source.md"
+  },
+  "instructions": "Không giả định module1 hoặc screen01 tồn tại; chỉ dùng một API và một screen để minh họa trách nhiệm."
+}
