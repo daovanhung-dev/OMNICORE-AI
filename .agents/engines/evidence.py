@@ -1,5 +1,6 @@
 """Các adapter kiểm tra cục bộ; không chấp nhận argv tùy ý hoặc exit 0 đơn thuần."""
 import json, subprocess, sys, tempfile, hashlib, xml.etree.ElementTree as ET, os, ast
+import re
 from pathlib import Path
 from context import safe, digest, canonical
 
@@ -17,12 +18,12 @@ def in_scope(root,path,scopes):
     rel=Path(canonical(root,path))
     return any(rel==Path(x) or Path(x) in rel.parents for x in scopes)
 
-def scoped_coverage(root,cwd,report,scopes,tests):
+def scoped_coverage(root,cwd,report,scopes,tests,source_root):
     """Chứng minh ca chạy thực sự chạm thân hàm trong mã app thuộc target; không chứng minh ý nghĩa assertion."""
     data=json.loads(report.read_text()); hits={}; accepted=set()
     for name,info in data.get('files',{}).items():
         p=(cwd/name).resolve()
-        if not p.is_relative_to(cwd/'app') or not p.is_file() or not in_scope(root,p.relative_to(root).as_posix(),scopes):continue
+        if not p.is_relative_to(source_root) or not p.is_file() or not in_scope(root,p.relative_to(root).as_posix(),scopes):continue
         tree=ast.parse(p.read_text(encoding='utf8'));body=set()
         for node in ast.walk(tree):
             if isinstance(node,(ast.FunctionDef,ast.AsyncFunctionDef)):
@@ -53,15 +54,19 @@ def inspect_check(root,a,kind,params,scopes=None):
         if sel.startswith('-') or not sel:raise ValueError('Selector sai')
         if not path.exists() or not (path.is_dir() or path.suffix=='.py'):raise ValueError('Thiếu tệp/thư mục test Python')
         if kind in {'regression','integration','migration'} and (not path.is_file() or '::' not in selector):raise ValueError('Cần chọn ca test cụ thể theo target')
+        coverage_source=params.get('coverage_source','app')
+        if not isinstance(coverage_source,str) or not re.fullmatch(r'[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*',coverage_source):raise ValueError('coverage_source sai')
+        source_root=(cwd/Path(*coverage_source.split('.'))).resolve()
+        if not source_root.is_relative_to(cwd) or not source_root.exists():raise ValueError('Không tìm thấy package nguồn trong cwd')
         with tempfile.TemporaryDirectory() as t:
             xml=Path(t)/'report.xml'; coverage_json=Path(t)/'coverage.json'
             env=dict(os.environ,COVERAGE_FILE=str(Path(t)/'.coverage'))
-            code,out=run([py,'-m','pytest','-q',selector,'--junitxml='+str(xml),'--cov=app','--cov-context=test','--cov-report='],cwd,env=env)
+            code,out=run([py,'-m','pytest','-q',selector,'--junitxml='+str(xml),'--cov='+coverage_source,'--cov-context=test','--cov-report='],cwd,env=env)
             if code or not xml.is_file():raise ValueError(f'pytest thất bại, exit={code}')
             details=junit(xml);details['report_sha256']=digest(xml)
             covcode,_=run([py,'-m','coverage','json','--show-contexts','-o',str(coverage_json)],cwd,env=env)
             if covcode or not coverage_json.is_file():raise ValueError('Thiếu báo cáo coverage theo ca')
-            details['scoped_tests'],details['executed_source']=scoped_coverage(root,cwd,coverage_json,scopes,details['tests'])
+            details['scoped_tests'],details['executed_source']=scoped_coverage(root,cwd,coverage_json,scopes,details['tests'],source_root)
             details['coverage_sha256']=digest(coverage_json);details['semantic_review']='HUMAN_REQUIRED'
     elif kind=='contract':
         p=safe(root,params['path']); j=json.loads(p.read_text())
@@ -79,31 +84,54 @@ def inspect_check(root,a,kind,params,scopes=None):
                 if not isinstance(name,str) or '::' not in name:raise ValueError('Cần ID ca test cụ thể (module::test)')
         artifacts[p.relative_to(root).as_posix()]=digest(p); details={'requirements':len(req),'expected_tests':sorted({x for r in req for x in r['tests']}),'semantic_review':'HUMAN_REQUIRED'}
     elif kind=='architecture':
-        code,out=run([py,str(a/'validators/validate_architecture.py'),'--backend',str(safe(root,params.get('backend','backend'))),'--frontend',str(safe(root,params.get('frontend','frontend')))],root)
+        argv=[py,str(a/'validators/validate_architecture.py'),'--backend',str(safe(root,params.get('backend','backend')))]
+        backend_only=params.get('backend_only',False)
+        if not isinstance(backend_only,bool):raise ValueError('backend_only phải là boolean')
+        if backend_only:
+            package=params.get('backend_package','app')
+            if not isinstance(package,str) or not re.fullmatch(r'[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*',package):raise ValueError('backend_package sai')
+            argv.extend(['--backend-package',package])
+            allow_empty_modules=params.get('allow_empty_modules',False)
+            if not isinstance(allow_empty_modules,bool):raise ValueError('allow_empty_modules phải là boolean')
+            if allow_empty_modules:argv.append('--allow-empty-modules')
+        else:
+            argv.extend(['--frontend',str(safe(root,params.get('frontend','frontend')))])
+        code,out=run(argv,root)
         details=json.loads(out); 
         if code or details.get('status')!='PASS_STATIC':raise ValueError('Kiểm định kiến trúc thất bại')
     elif kind=='context':
         code,out=run([py,str(a/'workflows/tools/build-context.py'),'--check'],root)
         if code or not (a/'project/SOURCE_MAP.json').is_file():raise ValueError('Context chưa đồng bộ')
         artifacts['.agents/project/SOURCE_MAP.json']=digest(a/'project/SOURCE_MAP.json')
-    elif kind in {'build','fe-test','browser'}:
+    elif kind=='build':
+        cwd=safe(root,params.get('cwd','frontend'))
+        require_scope(cwd.relative_to(root).as_posix())
+        runtime=params.get('runtime','typescript')
+        if runtime=='python-uv':
+            package=params.get('package')
+            if not isinstance(package,str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*',package):raise ValueError('Tên package Python sai')
+            with tempfile.TemporaryDirectory(prefix='codex-python-build-') as output_dir:
+                code,out=run(['uv','build','--package',package,'--wheel','--out-dir',output_dir],root)
+                wheels=list(Path(output_dir).glob('*.whl'))
+                if code or len(wheels)!=1:raise ValueError('Build Python không sinh đúng một wheel')
+                details={'package':package,'wheel':wheels[0].name,'wheel_sha256':digest(wheels[0])}
+        elif runtime=='typescript':
+            code,out=run(['tsc','--project','tsconfig.json'],cwd)
+            if code or not (cwd/'dist/main.js').is_file():raise ValueError('Build không sinh dist/main.js')
+            artifacts[(cwd/'dist/main.js').relative_to(root).as_posix()]=digest(cwd/'dist/main.js')
+        else:raise ValueError('Runtime build chưa được hỗ trợ: '+str(runtime))
+    elif kind in {'fe-test','browser'}:
         cwd=safe(root,params.get('cwd','frontend'))
         require_scope(cwd.relative_to(root).as_posix())
         # Adapter kiểm chứng đúng nền TypeScript kèm kit; không tự chạy npm script dự án lạ.
         if kind=='browser':
             raise ValueError('Chưa có adapter trình duyệt kiểm chứng độc lập; ghi BLOCKED')
-        if kind=='build':
-            code,out=run(['tsc','--project','tsconfig.json'],cwd)
-            if code or not (cwd/'dist/main.js').is_file():raise ValueError('Build không sinh dist/main.js')
-            artifacts[(cwd/'dist/main.js').relative_to(root).as_posix()]=digest(cwd/'dist/main.js')
-        else:
-            code,out=run(['tsc','--project','tsconfig.json'],cwd)
-            if code:raise ValueError('Biên dịch FE thất bại')
-            code,out=run(['node','--test','--test-reporter=tap','tests/model_check.mjs'],cwd)
-            import re
-            tests=re.search(rb'^# tests (\d+)$',out,re.M); passed=re.search(rb'^# pass (\d+)$',out,re.M)
-            if code or not tests or not passed or int(tests[1])==0 or tests[1]!=passed[1]:raise ValueError('Thiếu TAP hoặc ca test thất bại')
-            details={'cases':int(tests[1]),'passed':int(passed[1]),'tests':['node::'+x.decode() for x in re.findall(rb'^ok \d+ - ([^\r\n]+)$',out,re.M)],'semantic_review':'HUMAN_REQUIRED'}
+        code,out=run(['tsc','--project','tsconfig.json'],cwd)
+        if code:raise ValueError('Biên dịch FE thất bại')
+        code,out=run(['node','--test','--test-reporter=tap','tests/model_check.mjs'],cwd)
+        tests=re.search(rb'^# tests (\d+)$',out,re.M); passed=re.search(rb'^# pass (\d+)$',out,re.M)
+        if code or not tests or not passed or int(tests[1])==0 or tests[1]!=passed[1]:raise ValueError('Thiếu TAP hoặc ca test thất bại')
+        details={'cases':int(tests[1]),'passed':int(passed[1]),'tests':['node::'+x.decode() for x in re.findall(rb'^ok \d+ - ([^\r\n]+)$',out,re.M)],'semantic_review':'HUMAN_REQUIRED'}
     elif kind.startswith('dd-'):
         from template_adapter import verify_dd
         require_scope(params['path'])

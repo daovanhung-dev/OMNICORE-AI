@@ -18,6 +18,19 @@ def atomic(p,s):
     os.replace(tmp,p)
 
 def policies(a):return json.loads((a/'engines/policies.json').read_text())
+
+def required_gates(a,s):
+    required=set(policies(a)[s['route']])
+    if s['route']=='create-codebase':
+        frontend_roots=(Path('frontend'),Path('apps/web'),Path('apps/client'))
+        scopes=(Path(p) for target in s['targets'].values() for p in target['paths'])
+        has_frontend=any(
+            scope==frontend or scope in frontend.parents or frontend in scope.parents
+            for scope in scopes for frontend in frontend_roots
+        )
+        if not has_frontend:required.discard('fe-test')
+    return required
+
 class Engine:
     def __init__(self,a):self.a=a.resolve();self.root=self.a.parent;self.db=self.a/'sessions/state.sqlite3'
     @contextmanager
@@ -124,7 +137,7 @@ class Engine:
     def start(self,id):
         def f(s,db):
             self.fresh(s);order(s['targets'])
-            if not s['targets'] or set(policies(self.a)[s['route']])-set(k for t in s['targets'].values() for k in t['kinds']):raise ValueError('Kế hoạch chưa phủ các cổng bắt buộc')
+            if not s['targets'] or required_gates(self.a,s)-set(k for t in s['targets'].values() for k in t['kinds']):raise ValueError('Kế hoạch chưa phủ các cổng bắt buộc')
             if s['state']!='PLANNED':raise ValueError('Cần lập kế hoạch trước')
             s['state']='IN_PROGRESS'
         self.mutate(id,f)
@@ -192,7 +205,7 @@ class Engine:
             if s['state'] not in {'IN_PROGRESS','VERIFYING'} or not s['targets'] or any(not t['done'] for t in s['targets'].values()):raise ValueError('Còn target chưa xác minh')
             for key,t in s['targets'].items():
                 if any(not self.valid_receipt(t['receipts'].get(k,{}),now,s['id'],key,t['paths']) for k in t['kinds']):raise ValueError('Bằng chứng lỗi thời; mở lại target')
-            if set(policies(self.a)[s['route']])-set(k for t in s['targets'].values() for k in t['kinds']):raise ValueError('Thiếu cổng bắt buộc')
+            if required_gates(self.a,s)-set(k for t in s['targets'].values() for k in t['kinds']):raise ValueError('Thiếu cổng bắt buộc')
             if 'contract' in policies(self.a)[s['route']]:
                 for key,t in s['targets'].items():
                     if 'contract' not in t['receipts']:continue

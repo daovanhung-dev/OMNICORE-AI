@@ -10,6 +10,16 @@ class ArchitectureTests(unittest.TestCase):
     def tearDown(self):self.tmp.cleanup()
     def rules(self):return {i['rule'] for i in validator.validate(self.be,self.fe)}
     def test_valid(self):self.assertEqual(self.rules(),set())
+    def test_backend_only_package_without_business_modules(self):
+        package=self.root/'apps/api/omnicore_api';package.mkdir(parents=True);(package/'__init__.py').write_text('')
+        self.assertEqual(validator.validate(self.root/'apps/api',backend_package='omnicore_api',allow_empty_modules=True),[])
+    def test_backend_only_requires_package(self):
+        issues=validator.validate(self.root/'apps/api',backend_package='omnicore_api',allow_empty_modules=True)
+        self.assertIn('BE-001',{issue['rule'] for issue in issues})
+    def test_backend_only_detects_python_parse_errors(self):
+        package=self.root/'apps/api/omnicore_api';package.mkdir(parents=True);(package/'__init__.py').write_text('')
+        (package/'broken.py').write_text('def broken(:\n')
+        self.assertIn('PARSE',{issue['rule'] for issue in validator.validate(self.root/'apps/api',backend_package='omnicore_api',allow_empty_modules=True)})
     def test_missing_api_file(self):(self.api/'query.py').unlink();self.assertIn('BE-001',self.rules())
     def test_sql_in_view(self):
         with (self.api/'view.py').open('a') as f:f.write('\nWRONG="SELECT * FROM items"\n')

@@ -1,8 +1,10 @@
 import unittest,tempfile,shutil,sys,json,subprocess,concurrent.futures
+from unittest.mock import patch
 from pathlib import Path
 A=Path(__file__).resolve().parents[2];sys.path.insert(0,str(A/'engines'))
 from session import Engine,policies
 from context import getplan
+from evidence import inspect_check
 from template_adapter import create_dd,verify_dd
 from planning import order
 class SessionTest(unittest.TestCase):
@@ -14,6 +16,35 @@ class SessionTest(unittest.TestCase):
     def target(self,id='T1',key='A',deps=(),kinds=('dd-api',),paths=()):self.e.target(id,key,'Mục tiêu','Có bằng chứng',list(deps),list(kinds),list(paths or (['.agents/review-reports'] if 'review-report' in kinds else ['backend'] if 'api-test' in kinds else ['dd'])))
     def test_route_all(self):
         for route in json.loads((self.a/'routing.json').read_text())['tasks']:self.assertTrue(getplan(self.a,route)['paths']);self.assertTrue(policies(self.a)[route])
+    def test_create_codebase_backend_scope_does_not_require_fe_test(self):
+        self.begin('create-codebase')
+        self.e.target('T1','BE01','Backend nền','API, DB và migration được kiểm chứng',[],['architecture','api-test','build','context'],['apps/api'])
+        self.e.start('T1')
+        self.assertEqual(self.e.current('T1')['state'],'IN_PROGRESS')
+    def test_create_codebase_backend_scope_can_finish_without_fe_test(self):
+        self.begin('create-codebase')
+        checks=[kind for kind in policies(self.a)['create-codebase'] if kind!='fe-test']
+        self.e.target('T1','BE01','Backend nền','API, DB và migration được kiểm chứng',[],checks,['apps/api'])
+        self.e.start('T1')
+        state=self.e.current('T1');target=state['targets']['BE01']
+        target['done']=True
+        target['receipts']={kind:{'status':'PASS','source':{},'session':'T1','target':'BE01','scope':['apps/api'],'artifacts':{}} for kind in checks}
+        with self.e.tx() as db:self.e.save(db,state)
+        with patch('session.snapshot',return_value={}):self.e.finish('T1','Backend nền đạt các cổng đã khai báo')
+        self.assertEqual(self.e.current('T1')['state'],'COMPLETED')
+    def test_create_codebase_frontend_scope_still_requires_fe_test(self):
+        self.begin('create-codebase')
+        checks=[kind for kind in policies(self.a)['create-codebase'] if kind!='fe-test']
+        self.e.target('T1','FULL01','Monorepo','BE và FE được kiểm chứng',[],checks,['apps/api','apps/web'])
+        with self.assertRaisesRegex(ValueError,'cổng bắt buộc'):self.e.start('T1')
+    def test_api_test_adapter_accepts_backend_package_coverage(self):
+        package=self.root/'apps/api/omnicore_api';package.mkdir(parents=True);(package/'__init__.py').write_text('')
+        (package/'maths.py').write_text('def add(left, right):\n    return left + right\n')
+        tests=self.root/'apps/api/tests';tests.mkdir(parents=True)
+        (tests/'test_api.py').write_text('from omnicore_api.maths import add\n\ndef test_add():\n    assert add(2, 3) == 5\n')
+        result=inspect_check(self.root,self.a,'api-test',{'cwd':'apps/api','tests':'tests/test_api.py','coverage_source':'omnicore_api'},['apps/api'])
+        self.assertEqual(result['details']['cases'],1)
+        self.assertTrue(result['details']['executed_source'])
     def test_original_resources(self):self.assertIn('.agents/skills-original/create_dd_api/docs/dd/DD_API_Template_MD/05_Data_Mapping.md',getplan(self.a,'dd-api')['paths'])
     def test_missing_context(self):
         self.e.begin('dd-api','T1','DD')

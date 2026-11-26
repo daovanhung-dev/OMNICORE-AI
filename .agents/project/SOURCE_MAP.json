@@ -1,0 +1,559 @@
+{
+  "schemaVersion": "1.1.0",
+  "method": "git-tracked-and-untracked-not-ignored",
+  "gitCommit": "e26bdd4c60cebaa8dd36d14bac0eb9a69396cf9a",
+  "gitBranch": "main",
+  "lastSyncUTC": "2026-11-26T02:55:06+00:00",
+  "sourceFileCount": 60,
+  "sourceFolderCount": 18,
+  "dirtyFileCount": 11,
+  "projectSignals": [
+    {
+      "path": ".",
+      "manifests": [
+        "package.json",
+        "pyproject.toml"
+      ],
+      "signals": [
+        "Python application/package"
+      ]
+    },
+    {
+      "path": "apps/ai-api",
+      "manifests": [
+        "Dockerfile",
+        "pyproject.toml"
+      ],
+      "signals": [
+        "Python application/package"
+      ]
+    },
+    {
+      "path": "apps/api",
+      "manifests": [
+        "Dockerfile",
+        "pyproject.toml"
+      ],
+      "signals": [
+        "Python application/package"
+      ]
+    },
+    {
+      "path": "apps/web",
+      "manifests": [
+        "Dockerfile",
+        "package.json"
+      ],
+      "signals": [
+        "Angular (dependency declared)"
+      ]
+    }
+  ],
+  "delta": {
+    "added": 0,
+    "modified": 0,
+    "removed": 1
+  },
+  "folders": [
+    "",
+    "apps",
+    "apps/ai-api",
+    "apps/ai-api/omnicore_ai_api",
+    "apps/ai-api/tests",
+    "apps/api",
+    "apps/api/migrations",
+    "apps/api/omnicore_api",
+    "apps/api/omnicore_api/api",
+    "apps/api/omnicore_api/core",
+    "apps/api/tests",
+    "apps/web",
+    "apps/web/public",
+    "apps/web/src",
+    "apps/web/src/app",
+    "contracts",
+    "docs",
+    "infra"
+  ],
+  "files": [
+    {
+      "source": ".env.example",
+      "document": "tree/.env.example.md",
+      "status": "PATH_ONLY",
+      "sha256": "e7aa6498d8385c651c0fc32daef7ad91fa7c615698b55b53a2ceefefd49f9bf0",
+      "size": 345,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": ".gitignore",
+      "document": "tree/.gitignore.md",
+      "status": "PATH_ONLY",
+      "sha256": "64d378198ab5b3e5710af02635b8d7ed4c4d025842e50799c203f7c4c2e56494",
+      "size": 215,
+      "mtimeNs": 1794915695633270142
+    },
+    {
+      "source": ".nvmrc",
+      "document": "tree/.nvmrc.md",
+      "status": "PATH_ONLY",
+      "sha256": "584f19ccde29925286e32f566a2aa06c89efb4e2eb2bb2fc9ea5d56e2d190ac4",
+      "size": 8,
+      "mtimeNs": 1794915695637270041
+    },
+    {
+      "source": "AGENTS.md",
+      "document": "tree/AGENTS.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "47ff0d64c27a1418e18881922218c486176b59a8c11464dd96c697406a69daf1",
+      "size": 502,
+      "mtimeNs": 1795597518000000000
+    },
+    {
+      "source": "OMNICORE_AI_BD_MVP_V3_1_CHUAN_HOA_DD_READY.md",
+      "document": "tree/OMNICORE_AI_BD_MVP_V3_1_CHUAN_HOA_DD_READY.source.md",
+      "status": "PATH_ONLY_LARGE",
+      "sha256": "NOT_COMPUTED_LARGE",
+      "size": 339768,
+      "mtimeNs": 1794913360372428483
+    },
+    {
+      "source": "README.md",
+      "document": "tree/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "699c765626097580855f539ed17380f3d2abd678be3ac8c10a2a465e1ce8f678",
+      "size": 1822,
+      "mtimeNs": 1795597518000000000
+    },
+    {
+      "source": "apps/ai-api/.dockerignore",
+      "document": "tree/apps/ai-api/.dockerignore.md",
+      "status": "PATH_ONLY",
+      "sha256": "b68ed795a42e3b2c92ec48b53cf997e43992dcb508573fd73cd2269ed538cbde",
+      "size": 40,
+      "mtimeNs": 1794916210053408165
+    },
+    {
+      "source": "apps/ai-api/Dockerfile",
+      "document": "tree/apps/ai-api/Dockerfile.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "a43307e7a3a91a1b5b3ffaf79cebf1530f59158fffba8b5c1051323fee03ddfa",
+      "size": 226,
+      "mtimeNs": 1794916169497412725
+    },
+    {
+      "source": "apps/ai-api/omnicore_ai_api/__init__.py",
+      "document": "tree/apps/ai-api/omnicore_ai_api/__init__.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "6f0b42c3456d08fcae88ba3a624ebd0e0f3e6fa3552a7795bc0420077e428cca",
+      "size": 45,
+      "mtimeNs": 1794915695653269635
+    },
+    {
+      "source": "apps/ai-api/omnicore_ai_api/main.py",
+      "document": "tree/apps/ai-api/omnicore_ai_api/main.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "1aefd0a903f84b46ff08637cb145b08616b86149c7a84195d68d0ea3948f6b12",
+      "size": 219,
+      "mtimeNs": 1794915695657269534
+    },
+    {
+      "source": "apps/ai-api/pyproject.toml",
+      "document": "tree/apps/ai-api/pyproject.toml.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "ebc07dd124f6038bd308ae07258e44f599ff0864984bb44c2faaf0623ffb6756",
+      "size": 475,
+      "mtimeNs": 1794916169497412725
+    },
+    {
+      "source": "apps/ai-api/tests/__init__.py",
+      "document": "tree/apps/ai-api/tests/__init__.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "be367602133141c354f4a5fc7f5c08aec05e3f2f9c36c413bdd2d162e0f925b8",
+      "size": 31,
+      "mtimeNs": 1794915741848284168
+    },
+    {
+      "source": "apps/api/.dockerignore",
+      "document": "tree/apps/api/.dockerignore.md",
+      "status": "PATH_ONLY",
+      "sha256": "b68ed795a42e3b2c92ec48b53cf997e43992dcb508573fd73cd2269ed538cbde",
+      "size": 40,
+      "mtimeNs": 1794916210053408165
+    },
+    {
+      "source": "apps/api/Dockerfile",
+      "document": "tree/apps/api/Dockerfile.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "a1e082a55b7c1d09344ed30dc72b0cec38235a82c43a5eede6468afdec04c2a5",
+      "size": 277,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/README.md",
+      "document": "tree/apps/api/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "8e78a8a04b4b823fc15d259dc6025d0ae54ab48b2e70ab050ffe271f5e24c09a",
+      "size": 1275,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/alembic.ini",
+      "document": "tree/apps/api/alembic.ini.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "4be35c86b24192bde1327811488c4fcbc1f446b8c1e688fbbcba8f27640a252b",
+      "size": 96,
+      "mtimeNs": 1795661261902201552
+    },
+    {
+      "source": "apps/api/migrations/README.md",
+      "document": "tree/apps/api/migrations/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "37313baf99083ceed819618a1565a5e91ed74f84ca1f2a751f40daa134558e92",
+      "size": 286,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/migrations/env.py",
+      "document": "tree/apps/api/migrations/env.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "283ce57b819559221484ce9110ac8cee9b8219ffa0f5d9976ac867d690d2ec4c",
+      "size": 1119,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/migrations/script.py.mako",
+      "document": "tree/apps/api/migrations/script.py.mako.md",
+      "status": "PATH_ONLY",
+      "sha256": "311607040314ea4806e56d17f0575466ff700bf9f45f52fbb77c37df421388bd",
+      "size": 500,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/__init__.py",
+      "document": "tree/apps/api/omnicore_api/__init__.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "7c1cfcb4823b810ddd7baae4a1768515441e2d80e91d0dfad7c884d84d354d08",
+      "size": 37,
+      "mtimeNs": 1794915695653269635
+    },
+    {
+      "source": "apps/api/omnicore_api/api/__init__.py",
+      "document": "tree/apps/api/omnicore_api/api/__init__.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "2f54575006512c073bfc83e9c329634238012437c0c75e9cc8aed7d515db08eb",
+      "size": 41,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/api/health.py",
+      "document": "tree/apps/api/omnicore_api/api/health.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "41750f27684df7f617c8b2fc089ca2b8c37ff917e300136d38ce8a835e38d576",
+      "size": 989,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/api/v1.py",
+      "document": "tree/apps/api/omnicore_api/api/v1.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "cb877e7ab5dc8fc05ac5b11dbef2c90a9a6fc09415c9df848b907c7fe50fd5be",
+      "size": 52,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/core/__init__.py",
+      "document": "tree/apps/api/omnicore_api/core/__init__.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "36eff36233aee6488fe84a9396d533e7800a15154efe667be67aa18dbcef7a10",
+      "size": 54,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/core/config.py",
+      "document": "tree/apps/api/omnicore_api/core/config.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "daf01f871ea42fa99a2db08cab4d55d4fa8999d28615c552dcb6663a2e6be371",
+      "size": 415,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/core/database.py",
+      "document": "tree/apps/api/omnicore_api/core/database.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "67227123e0681600eaaa2fadc939fb861f65dc57723f2a9d26e847d3016b1874",
+      "size": 1337,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/core/models.py",
+      "document": "tree/apps/api/omnicore_api/core/models.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "be7a6361d1ecd1d26057ea91fe8cbb4da31c6c4c3c79dc5606d3bee3015d71a9",
+      "size": 154,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/omnicore_api/main.py",
+      "document": "tree/apps/api/omnicore_api/main.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "3d3d0a9bf9b9c2db2ffecc919e8d3d949c1c1c0af25cb6ac57e360c97d2d785c",
+      "size": 1111,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/pyproject.toml",
+      "document": "tree/apps/api/pyproject.toml.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "54f1e03d65cf54adcc0c3782e5dc0e4721995fb4ba1d8ed5f849fcef473413db",
+      "size": 580,
+      "mtimeNs": 1795660652802562108
+    },
+    {
+      "source": "apps/api/tests/__init__.py",
+      "document": "tree/apps/api/tests/__init__.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "6fe53b32ab15e62fd6c321fc04b0bfc1d068ac540827d69ffb85775954f16592",
+      "size": 33,
+      "mtimeNs": 1794915741840284310
+    },
+    {
+      "source": "apps/api/tests/test_api.py",
+      "document": "tree/apps/api/tests/test_api.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "ecd5e8213d018ac3ad36ee41ba0d5b53c10f29408042723c20b03a37be4b8686",
+      "size": 3452,
+      "mtimeNs": 1795661494345287566
+    },
+    {
+      "source": "apps/web/.dockerignore",
+      "document": "tree/apps/web/.dockerignore.md",
+      "status": "PATH_ONLY",
+      "sha256": "2ce36fda16b894ed174f926657f8918706c3d6d0bd40eda143dfea203f138e41",
+      "size": 42,
+      "mtimeNs": 1794916210053408165
+    },
+    {
+      "source": "apps/web/.editorconfig",
+      "document": "tree/apps/web/.editorconfig.md",
+      "status": "PATH_ONLY",
+      "sha256": "d62fd282eadb5b3ff888a23ba5968e490cc0a77dded2fbc4f704b7e6e247f4db",
+      "size": 314,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/.gitignore",
+      "document": "tree/apps/web/.gitignore.md",
+      "status": "PATH_ONLY",
+      "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+      "size": 622,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/.prettierrc",
+      "document": "tree/apps/web/.prettierrc.md",
+      "status": "PATH_ONLY",
+      "sha256": "8cd4a6408c3eadd007f0e8986754f4f03e6f2ea451a0181040555671491069a9",
+      "size": 161,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/Dockerfile",
+      "document": "tree/apps/web/Dockerfile.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "d52af5c7d95c2379092583f996da7ccb84703bd94ca1f1cd4ae6eafe4efd9706",
+      "size": 223,
+      "mtimeNs": 1794916210053408165
+    },
+    {
+      "source": "apps/web/README.md",
+      "document": "tree/apps/web/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "0e6c5d16d89ac48b15716dfb51f26c4b0551dfaa9b4d8d57f4b48b1d20a25b2d",
+      "size": 1456,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/angular.json",
+      "document": "tree/apps/web/angular.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "e9c9c6b54c4a1779774c34bf3cf244973cd23f6299d29be06d9d4824778b6a36",
+      "size": 1894,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/package-lock.json",
+      "document": "tree/apps/web/package-lock.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "47e66ee5ce0df401c4dead2b7522552f17507ce86201e8e78db08aec33dae9ee",
+      "size": 240337,
+      "mtimeNs": 1794916008379570411
+    },
+    {
+      "source": "apps/web/package.json",
+      "document": "tree/apps/web/package.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "77213708d496056d15853310eeca5ebf0514c7b1264ecec684ca8d1af32c474e",
+      "size": 779,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/public/favicon.ico",
+      "document": "tree/apps/web/public/favicon.ico.md",
+      "status": "PATH_ONLY",
+      "sha256": "f9102be80297c0529207607be5277b4f90bca89d65988fa1771b91c7894e815f",
+      "size": 15086,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/app/app.config.ts",
+      "document": "tree/apps/web/src/app/app.config.ts.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+      "size": 312,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/app/app.css",
+      "document": "tree/apps/web/src/app/app.css.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/app/app.html",
+      "document": "tree/apps/web/src/app/app.html.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+      "size": 20144,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/app/app.routes.ts",
+      "document": "tree/apps/web/src/app/app.routes.ts.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "e2ef74b4c1f7f52a30a417c6808f01b2a29e69bb0d20302527ae5001607f7180",
+      "size": 77,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/app/app.spec.ts",
+      "document": "tree/apps/web/src/app/app.spec.ts.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "0b62bfdc2b6ccd870529780b59566e23718e0ceb09ee32869be3c8cc93e26783",
+      "size": 677,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/app/app.ts",
+      "document": "tree/apps/web/src/app/app.ts.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "19dc96818ba94cfe4b74a3a920acddb3ce69c341e16bbf860e51e1860a56bf17",
+      "size": 286,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/src/index.html",
+      "document": "tree/apps/web/src/index.html.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "949bb6d4c834ee1d99f3621e73b5fc28a25cb637198b84c705be5a58c8b583cc",
+      "size": 297,
+      "mtimeNs": 1794916210049408263
+    },
+    {
+      "source": "apps/web/src/main.ts",
+      "document": "tree/apps/web/src/main.ts.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+      "size": 222,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/src/styles.css",
+      "document": "tree/apps/web/src/styles.css.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "c7295b915b6a250b910d30ff3b9d1991b6f43c9474d3afafc6cba59eee44383e",
+      "size": 80,
+      "mtimeNs": 1794915811383403007
+    },
+    {
+      "source": "apps/web/tsconfig.app.json",
+      "document": "tree/apps/web/tsconfig.app.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+      "size": 398,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/tsconfig.json",
+      "document": "tree/apps/web/tsconfig.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+      "size": 908,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "apps/web/tsconfig.spec.json",
+      "document": "tree/apps/web/tsconfig.spec.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+      "size": 409,
+      "mtimeNs": 1794915811379403040
+    },
+    {
+      "source": "contracts/README.md",
+      "document": "tree/contracts/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "cb59cfb5891f4b8a36be943f582b932763a6e48a956b5a8b226173da70b70286",
+      "size": 195,
+      "mtimeNs": 1794915695661269432
+    },
+    {
+      "source": "docker-compose.yml",
+      "document": "tree/docker-compose.yml.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "2d65933f233148474f20f131ddd4d7799a49cf19fc1db53e1c0a479626be8880",
+      "size": 1369,
+      "mtimeNs": 1794916210053408165
+    },
+    {
+      "source": "docs/README.md",
+      "document": "tree/docs/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "917aaaf759ac507b0a4b334896b7e3fcc805acf150f671d8d52e160d67fd0f5f",
+      "size": 175,
+      "mtimeNs": 1794915695665269330
+    },
+    {
+      "source": "infra/README.md",
+      "document": "tree/infra/README.source.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "3a6600eae737def8507fe090255f4ec2711b85528938f1452f12143665b918ce",
+      "size": 205,
+      "mtimeNs": 1794915741840284310
+    },
+    {
+      "source": "package.json",
+      "document": "tree/package.json.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "5a751cc9382d64d3e35681e90ca69c5561d145858278974e4a0f20381463f498",
+      "size": 251,
+      "mtimeNs": 1794915695633270142
+    },
+    {
+      "source": "pyproject.toml",
+      "document": "tree/pyproject.toml.md",
+      "status": "SOURCE_INSPECTED_STATIC",
+      "sha256": "9c363f4fdc23cde3a262432f046f93279a99b4a8b0542e171881d0e224ee6d04",
+      "size": 339,
+      "mtimeNs": 1794915695641269939
+    },
+    {
+      "source": "uv.lock",
+      "document": "tree/uv.lock.md",
+      "status": "PATH_ONLY_LARGE",
+      "sha256": "NOT_COMPUTED_LARGE",
+      "size": 269227,
+      "mtimeNs": 1795661039835318663
+    }
+  ]
+}
